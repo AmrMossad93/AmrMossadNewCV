@@ -1,8 +1,7 @@
-<mat-drawer-container [class.drawer-opened]="drawer.opened" class="example-container">
+<mat-drawer-container [class.drawer-opened]="drawer.opened" [dir]="langService.direction">
   <mat-drawer #drawer class="drawer animate__animated animate__fadeInLeft" mode="side" opened="true">
-
     <mat-toolbar class="header">
-      <div color="primary">
+      <div>
         Welcome To My Portfolio
       </div>
       <mat-icon class="close" style="cursor: pointer" (click)="drawer.close()">
@@ -44,7 +43,8 @@
   </mat-toolbar>
 </mat-drawer-container>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item routerLink="/connect-modules/setting-page">Edit Profile</button>
-  <button mat-menu-item routerLink="/connect-modules/password-page">Change Password</button>
-  <button mat-menu-item>LogOut</button>
+  <button mat-menu-item *ngIf="langService.language === 'en'" (click)="langService.changeLanguage('ar')">العربيه
+  </button>
+  <button mat-menu-item *ngIf="langService.language === 'ar'" (click)="langService.changeLanguage('en')">English
+  </button>
 </mat-menu>
