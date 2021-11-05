@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AmrMossadNewCV';
+  connectUrls = [
+    {url: 'home', page: 'Home Page'},
+    {url: 'about-me', page: 'About Me'},
+    {url: 'resume', page: 'My Resume'},
+  ]
 }

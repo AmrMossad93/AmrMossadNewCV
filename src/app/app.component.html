@@ -1,1 +1,50 @@
-<router-outlet></router-outlet>
+<mat-drawer-container [class.drawer-opened]="drawer.opened" class="example-container">
+  <mat-drawer #drawer class="drawer animate__animated animate__fadeInLeft" mode="side" opened="true">
+
+    <mat-toolbar class="header">
+      <div>
+        Welcome
+      </div>
+      <mat-icon class="close" style="cursor: pointer" (click)="drawer.close()">
+        close
+      </mat-icon>
+    </mat-toolbar>
+    <br>
+    <br>
+    <br>
+    <div class="contents">
+      <mat-selection-list #shoes [multiple]="false">
+        <mat-list-item *ngFor="let link of connectUrls" [routerLink]="link.url" [routerLinkActive]="['active']"
+                       [routerLinkActiveOptions]="{exact: true}">
+          <a> {{link.page}}</a>
+        </mat-list-item>
+      </mat-selection-list>
+    </div>
+  </mat-drawer>
+
+  <mat-toolbar class="main header animate__animated animate__fadeInDown" color="primary">
+    <mat-icon style="cursor: pointer" *ngIf="!drawer.opened" (click)="drawer.toggle()">
+      menu
+    </mat-icon>
+    <div class="flex-spacer"></div>
+    <button mat-raised-button [matMenuTriggerFor]="menu">Amr Mossad Portfolio</button>
+  </mat-toolbar>
+
+  <div class="main contents animate__animated animate__zoomIn">
+    <router-outlet></router-outlet>
+  </div>
+
+
+  <mat-toolbar class="main footer animate__animated animate__fadeInUp" color="primary">
+    <div class="flex-spacer"></div>
+    <button mat-raised-button class="m-1">Feedback</button>
+    <button mat-raised-button class="m-1">Online Assistant</button>
+    <button mat-raised-button class="m-1">Toll-Free: 1-866-834-7925</button>
+    <button mat-raised-button class="m-1">Tutorials</button>
+  </mat-toolbar>
+</mat-drawer-container>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/connect-modules/setting-page">Edit Profile</button>
+  <button mat-menu-item routerLink="/connect-modules/password-page">Change Password</button>
+  <button mat-menu-item>LogOut</button>
+</mat-menu>
