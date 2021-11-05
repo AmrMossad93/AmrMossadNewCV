@@ -8,6 +8,7 @@ import {AngularMaterialModule} from "./DesignModules/angular-material.module";
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule, HttpHandler} from '@angular/common/http';
+import {NgxSpinnerModule} from "ngx-spinner";
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,6 +31,7 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    NgxSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
