@@ -26,7 +26,10 @@
       menu
     </mat-icon>
     <div class="flex-spacer"></div>
-    <button mat-raised-button [matMenuTriggerFor]="menu">Amr Mossad</button>
+    <button mat-raised-button class="m-1">Amr Mossad</button>
+    <button mat-mini-fab class="m-1" [matMenuTriggerFor]="menu">
+      <mat-icon>translate</mat-icon>
+    </button>
   </mat-toolbar>
 
   <div class="main contents animate__animated animate__zoomIn">
@@ -43,9 +46,14 @@
   </mat-toolbar>
 </mat-drawer-container>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item *ngIf="langService.language === 'en'" (click)="langService.changeLanguage('ar')">العربيه
+  <button mat-menu-item (click)="langService.changeLanguage('ar')">
+    العربيه
   </button>
-  <button mat-menu-item *ngIf="langService.language === 'ar'" (click)="langService.changeLanguage('en')">English
+  <button mat-menu-item (click)="langService.changeLanguage('en')">
+    English
+  </button>
+  <button mat-menu-item (click)="langService.changeLanguage('fr')">
+    Français
   </button>
 </mat-menu>
 <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#3f51b5" type="square-loader"
