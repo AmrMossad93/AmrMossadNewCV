@@ -1,7 +1,7 @@
 .drawer {
   position: fixed;
   height: 100vh;
-  min-width: 15%;
+  min-width: 18%;
 }
 
 .drawer .header {
@@ -54,6 +54,16 @@
   margin-left: 10px;
   transition: margin-left linear .5s;
   color: #ffffff;
+}
+
+*[dir=rtl] .mat-list-item.active a {
+  margin-right: 10px;
+  transition: margin-right linear .5s;
+  color: #ffffff;
+}
+
+mat-list-item a {
+  color: #3f51b5;
 }
 
 mat-list-item {

@@ -29,19 +29,14 @@ export class LangService {
   changeLanguage(lang: string): void {
     if (lang === 'ar') {
       this.document.body.setAttribute('dir', 'rtl');
-      this.translateService.use('ar');
-      localStorage.setItem('language', 'ar');
-      this.language = 'ar';
-      this.position = 'end';
       this.direction = "rtl";
     } else {
       this.document.body.setAttribute('dir', 'ltr');
-      this.translateService.use('en');
-      localStorage.setItem('language', 'en');
-      this.language = 'en';
-      this.position = 'start';
       this.direction = "ltr";
     }
-    this.setLang(this.language);
+    this.language = lang;
+    localStorage.setItem('amrMossadWebsiteLanguage', lang);
+    this.translateService.use(lang);
+    this.setLang(lang);
   }
 }

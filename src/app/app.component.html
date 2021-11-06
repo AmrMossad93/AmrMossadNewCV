@@ -1,10 +1,10 @@
 <mat-drawer-container [class.drawer-opened]="drawer.opened" [dir]="langService.direction">
   <mat-drawer #drawer class="drawer animate__animated animate__fadeInLeft" mode="side" opened="true">
     <mat-toolbar class="header">
-      <div>
-        Welcome To My Portfolio
+      <div style="color: #3f51b5">
+        {{'Welcome To My Portfolio' | translate}}
       </div>
-      <mat-icon class="close" style="cursor: pointer" (click)="drawer.close()">
+      <mat-icon class="close" style="cursor: pointer;color: #3f51b5" (click)="drawer.close()">
         close
       </mat-icon>
     </mat-toolbar>
@@ -15,7 +15,7 @@
       <mat-selection-list #shoes [multiple]="false">
         <mat-list-item *ngFor="let link of connectUrls" [routerLink]="link.url" [routerLinkActive]="['active']"
                        [routerLinkActiveOptions]="{exact: true}">
-          <a> {{link.page}}</a>
+          <a>{{link.page}}</a>
         </mat-list-item>
       </mat-selection-list>
     </div>
@@ -48,5 +48,5 @@
   <button mat-menu-item *ngIf="langService.language === 'ar'" (click)="langService.changeLanguage('en')">English
   </button>
 </mat-menu>
-<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="large" color="#68cdec" type="square-jelly-box"
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#3f51b5" type="square-loader"
              [fullScreen]="true"></ngx-spinner>
