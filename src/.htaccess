@@ -3,17 +3,10 @@
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  # Redirection of requests to index.html
+  # If an existing asset or directory is requested go to it as it is
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-  RewriteRule ^.*$ - [NC,L]
-  RewriteRule ^(.*) index.html [NC,L]
-   # Feature-Policy
-      Header set Feature-Policy "microphone 'none'"
-      # Referrer-Policy
-      Header set Referrer-Policy "same-origin"
-      # Content-Security-Policy
-      Header set Content-Security-Policy "script-src 'self'"
-      # X-XSS-Protection
-      Header set X-XSS-Protection "1; mode=block"
+  RewriteRule ^ - [L]
+  # If the requested resource doesn't exist, use index.html
+  RewriteRule ^ /index.html
 </IfModule>
