@@ -22,11 +22,13 @@ export class LangService {
     return this.lang.asObservable();
   }
 
-  setLang(lang: string): void {
-    this.lang.next(lang);
+  setLang(lang: null | string): void {
+    if (lang != null) {
+      this.lang.next(lang);
+    }
   }
 
-  changeLanguage(lang: string): void {
+  changeLanguage(lang: string | null): void {
     if (lang === 'ar') {
       this.document.body.setAttribute('dir', 'rtl');
       this.direction = "rtl";
@@ -35,8 +37,12 @@ export class LangService {
       this.direction = "ltr";
     }
     this.language = lang;
-    localStorage.setItem('amrMossadWebsiteLanguage', lang);
-    this.translateService.use(lang);
+    if (typeof lang === "string") {
+      localStorage.setItem('amrMossadWebsiteLanguage', lang);
+    }
+    if (lang != null) {
+      this.translateService.use(lang);
+    }
     this.setLang(lang);
   }
 }

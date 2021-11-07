@@ -19,12 +19,13 @@ export class AppComponent implements OnInit {
     {url: 'contact', page: 'Contact'},
   ];
   currentUrl: string = '';
-
+  lang = localStorage.getItem('amrMossadWebsiteLanguage');
   // @ts-ignore
   constructor(@Inject(DOCUMENT) private document, public langService: LangService, public router: Router, private loaderService: LoaderService) {
     if (!localStorage.getItem('amrMossadWebsiteLanguage')) {
       localStorage.setItem('amrMossadWebsiteLanguage', 'en');
     }
+    this.langService.changeLanguage(this.lang)
   }
 
   ngOnInit(): void {

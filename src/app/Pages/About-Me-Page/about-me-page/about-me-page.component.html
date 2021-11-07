@@ -1,1 +1,13 @@
-<p>about-me-page works!</p>
+<div class="container">
+  <app-card title="{{'Let Me Introduce Myself' | translate}}" subTitle="{{'About Me' | translate}}"
+            [showProgress]="showProgress">
+    <div class="card text-center animate__animated animate__fadeIn">
+      <h5 class="card-header">{{aboutMeOBJView.title}}</h5>
+      <div class="card-body">
+        <h5 class="card-title">
+          {{aboutMeOBJView.desc}}
+        </h5>
+      </div>
+    </div>
+  </app-card>
+</div>

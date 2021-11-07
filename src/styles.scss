@@ -42,6 +42,12 @@ mat-card-subtitle {
   animation: gradient2 5s ease infinite;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+}
+
 @keyframes gradient2 {
   0% {
     background-position: 0 50%;
