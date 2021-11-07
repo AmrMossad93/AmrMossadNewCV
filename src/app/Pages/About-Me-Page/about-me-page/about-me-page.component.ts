@@ -40,16 +40,46 @@ export class AboutMePageComponent implements OnInit {
         this.aboutMeOBJView = {
           desc: this.aboutMeOBJ.descEn,
           title: this.aboutMeOBJ.titleEn,
+          imgPath: this.aboutMeOBJ.imgPath,
+          phone: this.aboutMeOBJ.phone,
+          email: this.aboutMeOBJ.email,
+          profile: this.aboutMeOBJ.profileEn,
+          fullName: this.aboutMeOBJ.fullNameEn,
+          birthDate: this.aboutMeOBJ.birthDateEn,
+          degree: this.aboutMeOBJ.degreeEn,
+          nationality: this.aboutMeOBJ.nationalityEn,
+          militaryStatus: this.aboutMeOBJ.militaryStatusEn,
+          maritalStatus: this.aboutMeOBJ.maritalStatusEn,
         }
       } else if (lang === 'ar') {
         this.aboutMeOBJView = {
           desc: this.aboutMeOBJ.descAr,
           title: this.aboutMeOBJ.titleAr,
+          imgPath: this.aboutMeOBJ.imgPath,
+          phone: this.aboutMeOBJ.phone,
+          email: this.aboutMeOBJ.email,
+          profile: this.aboutMeOBJ.profileAr,
+          fullName: this.aboutMeOBJ.fullNameAr,
+          birthDate: this.aboutMeOBJ.birthDateAr,
+          degree: this.aboutMeOBJ.degreeAr,
+          nationality: this.aboutMeOBJ.nationalityAr,
+          militaryStatus: this.aboutMeOBJ.militaryStatusAr,
+          maritalStatus: this.aboutMeOBJ.maritalStatusAr,
         }
       } else if (lang === 'fr') {
         this.aboutMeOBJView = {
           desc: this.aboutMeOBJ.descFn,
           title: this.aboutMeOBJ.titleFn,
+          imgPath: this.aboutMeOBJ.imgPath,
+          phone: this.aboutMeOBJ.phone,
+          email: this.aboutMeOBJ.email,
+          profile: this.aboutMeOBJ.profileFn,
+          fullName: this.aboutMeOBJ.fullNameFn,
+          birthDate: this.aboutMeOBJ.birthDateFn,
+          degree: this.aboutMeOBJ.degreeFn,
+          nationality: this.aboutMeOBJ.nationalityFn,
+          militaryStatus: this.aboutMeOBJ.militaryStatusFn,
+          maritalStatus: this.aboutMeOBJ.maritalStatusFn,
         }
       }
     });

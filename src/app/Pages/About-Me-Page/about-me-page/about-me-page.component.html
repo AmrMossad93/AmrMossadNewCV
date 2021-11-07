@@ -4,36 +4,69 @@
     <div class="card mb-3  animate__animated animate__fadeIn">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="assets/Images/Profile/04C6B591-881C-4AA8-83D3-465E51065E04_1_105_c.jpeg" class="img-fluid rounded-start" alt="...">
+          <img [src]="aboutMeOBJView.imgPath" class="img-fluid rounded-start" alt="photo">
         </div>
         <div class="col-md-8">
           <div class="card-body">
+            <h5 class="card-header text-primary text-center">{{aboutMeOBJView.profile}}</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-primary">
+                      <b>
+                        {{'Full name' | translate}}
+                      </b>: {{aboutMeOBJView.fullName}}
+                    </li>
+                    <li class="list-group-item text-primary">
+                      <b>
+                        {{'Birth Date' | translate}}
+                      </b>: {{aboutMeOBJView.birthDate}}
+                    </li>
+                    <li class="list-group-item text-primary">
+                      <b>
+                        {{'Nationality' | translate}}
+                      </b>: {{aboutMeOBJView.nationality}}
+                    </li>
+                    <li class="list-group-item text-primary">
+                      <b>
+                        {{'Military Status' | translate}}
+                      </b>: {{aboutMeOBJView.militaryStatus}}
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-primary">
+                      <b>
+                        {{'Marital Status' | translate}}
+                      </b>: {{aboutMeOBJView.maritalStatus}}
+                    </li>
+                    <li class="list-group-item text-primary">
+                      <b>
+                        {{'Email' | translate}}
+                      </b>: {{aboutMeOBJView.email}}
+                    </li>
+                    <li class="list-group-item text-primary">
+                      <b>
+                        {{'Phone' | translate}}
+                      </b>: {{aboutMeOBJView.phone}}
+                    </li>
+                    <li class="list-group-item text-primary">
+                      <b>
+                        {{'Degree' | translate}}
+                      </b>: {{aboutMeOBJView.degree}}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <h5 class="card-header text-primary text-center">{{aboutMeOBJView.title}}</h5>
             <h5 class="card-title text-primary text-center">
               {{aboutMeOBJView.desc}}
             </h5>
           </div>
         </div>
-      </div>
-    </div>
-<!--    <div class="card text-center">-->
-<!--      <h5 class="card-header text-primary">{{aboutMeOBJView.title}}</h5>-->
-<!--      <div class="card-body">-->
-<!--        <h5 class="card-title text-primary">-->
-<!--          {{aboutMeOBJView.desc}}-->
-<!--        </h5>-->
-<!--      </div>-->
-<!--    </div>-->
-  </app-card>
-  <br>
-  <app-card title="{{'Profile' | translate}}" subTitle="{{'More About Me' | translate}}"
-            [showProgress]="showProgress">
-    <div class="card text-center animate__animated animate__fadeIn">
-      <h5 class="card-header text-primary">{{aboutMeOBJView.title}}</h5>
-      <div class="card-body">
-        <h5 class="card-title text-primary">
-          {{aboutMeOBJView.desc}}
-        </h5>
       </div>
     </div>
   </app-card>
