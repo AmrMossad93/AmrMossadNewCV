@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { HomePageRoutingModule } from './home-page-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
+import {AngularMaterialModule} from "../../DesignModules/angular-material.module";
+import {TranslateModule} from "@ngx-translate/core";
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { HomePageComponent } from './home-page/home-page.component';
   ],
   imports: [
     CommonModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    AngularMaterialModule,
+    TranslateModule
   ]
 })
 export class HomePageModule { }
