@@ -1,0 +1,98 @@
+[
+  {
+    "name": "HTML5 & CSS3",
+    "progress": 95
+  },
+  {
+    "name": "SASS",
+    "progress": 90
+  },
+  {
+    "name": "Bootstrap",
+    "progress": 95
+  },
+  {
+    "name": "Adobe XD",
+    "progress": 80
+  },
+  {
+    "name": "Angular +2",
+    "progress": 98
+  },
+  {
+    "name": "Ionic",
+    "progress": 90
+  },
+  {
+    "name": "TypeScript",
+    "progress": 95
+  },
+  {
+    "name": "Flutter",
+    "progress": 60
+  },
+  {
+    "name": "Dart",
+    "progress": 55
+  },
+  {
+    "name": "EcmaScript",
+    "progress": 80
+  },
+  {
+    "name": "JavaScript",
+    "progress": 85
+  },
+  {
+    "name": "ReactJS",
+    "progress": 65
+  },
+  {
+    "name": " SQL Server",
+    "progress": 90
+  },
+  {
+    "name": "ASP.NET",
+    "progress": 80
+  },
+  {
+    "name": "MVC",
+    "progress": 80
+  },
+  {
+    "name": "C#",
+    "progress": 75
+  },
+  {
+    "name": "Entity Framework",
+    "progress": 70
+  },
+  {
+    "name": " WEB API",
+    "progress": 75
+  },
+  {
+    "name": "GIT",
+    "progress": 85
+  },
+  {
+    "name": "jQuery",
+    "progress": 70
+  },
+  {
+    "name": "Node.Js",
+    "progress": 65
+  },
+  {
+    "name": "Express.Js",
+    "progress": 65
+  },
+  {
+    "name": "Nest.Js",
+    "progress": 90
+  },
+  {
+    "name": "MongoDB",
+    "progress": 70
+  }
+]

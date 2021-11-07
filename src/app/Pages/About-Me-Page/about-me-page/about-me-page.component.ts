@@ -3,6 +3,7 @@ import {LangService} from 'src/app/Services/lang.service';
 import {AboutMeService} from "../../../Services/about-me.service";
 import {IAboutMeOBJ, IAboutMeView} from "../../../Interfaces/about-me";
 import {IPersonalSkills, IPersonalSkillsView} from "../../../Interfaces/personal-skills";
+import {ITechnicalSkills} from "../../../Interfaces/technical-skills";
 
 @Component({
   selector: 'app-about-me-page',
@@ -15,6 +16,7 @@ export class AboutMePageComponent implements OnInit {
   aboutMeOBJView = {} as IAboutMeView;
   personalSkills = {} as IPersonalSkills;
   personalSkillsView = {} as IPersonalSkillsView;
+  technicalSkills: ITechnicalSkills[] = []
 
   constructor(private aboutMeService: AboutMeService, private langService: LangService) {
   }
@@ -22,6 +24,7 @@ export class AboutMePageComponent implements OnInit {
   ngOnInit(): void {
     this.getAboutMe();
     this.getPersonalSkills();
+    this.getTechnicalSkills();
   }
 
   getAboutMe(): void {
@@ -114,5 +117,11 @@ export class AboutMePageComponent implements OnInit {
         this.personalSkillsView.skills = this.personalSkills.skillsFr;
       }
     });
+  }
+
+  getTechnicalSkills(): void {
+    this.aboutMeService.getTechnicalSkills().subscribe(res => {
+      this.technicalSkills = res;
+    })
   }
 }
