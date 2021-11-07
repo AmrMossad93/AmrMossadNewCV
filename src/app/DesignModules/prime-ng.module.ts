@@ -11,6 +11,7 @@ import {MenuModule} from 'primeng/menu';
 import {TooltipModule} from 'primeng/tooltip';
 import {OverlayPanelModule} from 'primeng/overlaypanel';
 import {TagModule} from 'primeng/tag';
+import {SpeedDialModule} from 'primeng/speeddial';
 
 const primeNgModule = [
   ButtonModule,
@@ -23,7 +24,8 @@ const primeNgModule = [
   MenuModule,
   TooltipModule,
   OverlayPanelModule,
-  TagModule
+  TagModule,
+  SpeedDialModule
 ];
 
 @NgModule({
