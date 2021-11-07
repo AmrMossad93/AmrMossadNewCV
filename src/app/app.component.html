@@ -14,7 +14,7 @@
       <mat-selection-list #shoes [multiple]="false">
         <mat-list-item *ngFor="let link of connectUrls" [routerLink]="link.url" [routerLinkActive]="['active']"
                        [routerLinkActiveOptions]="{exact: true}" (click)="drawer.close()">
-          <a>{{link.page}}</a>
+          <a>{{link.page | translate}}</a>
         </mat-list-item>
       </mat-selection-list>
     </div>
