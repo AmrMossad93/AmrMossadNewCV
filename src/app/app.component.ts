@@ -28,11 +28,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (localStorage.getItem('amrMossadWebsiteLanguage') === 'ar') {
-      this.langService.changeLanguage('ar');
-    } else {
-      this.langService.changeLanguage('en');
-    }
     this.router.events.subscribe((routerEvent: Event) => {
       if (routerEvent instanceof NavigationStart) {
         this.loaderService.show();
