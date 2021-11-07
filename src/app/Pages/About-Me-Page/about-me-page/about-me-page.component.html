@@ -70,4 +70,19 @@
       </div>
     </div>
   </app-card>
+  <br>
+  <app-card title="{{'Personal Skills' | translate}}" subTitle="{{'About Me' | translate}}"
+            [showProgress]="showProgress">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-group list-group-flush text-center">
+          <li class="list-group-item text-primary" *ngFor="let skill of personalSkillsView.skills">
+            <b>
+              {{skill}}
+            </b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </app-card>
 </div>

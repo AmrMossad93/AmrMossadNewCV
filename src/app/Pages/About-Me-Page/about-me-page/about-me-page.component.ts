@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {LangService} from 'src/app/Services/lang.service';
 import {AboutMeService} from "../../../Services/about-me.service";
 import {IAboutMeOBJ, IAboutMeView} from "../../../Interfaces/about-me";
+import {IPersonalSkills, IPersonalSkillsView} from "../../../Interfaces/personal-skills";
 
 @Component({
   selector: 'app-about-me-page',
@@ -12,12 +13,15 @@ export class AboutMePageComponent implements OnInit {
   showProgress = true;
   aboutMeOBJ = {} as IAboutMeOBJ;
   aboutMeOBJView = {} as IAboutMeView;
+  personalSkills = {} as IPersonalSkills;
+  personalSkillsView = {} as IPersonalSkillsView;
 
   constructor(private aboutMeService: AboutMeService, private langService: LangService) {
   }
 
   ngOnInit(): void {
     this.getAboutMe();
+    this.getPersonalSkills();
   }
 
   getAboutMe(): void {
@@ -84,5 +88,31 @@ export class AboutMePageComponent implements OnInit {
       }
     });
     this.showProgress = false;
+  }
+
+  getPersonalSkills(): void {
+    this.aboutMeService.getPersonalSkills().subscribe(res => {
+      this.personalSkills = res;
+    }, error => {
+    }, () => {
+      this.createPersonalSkillsOBJ();
+    })
+  }
+
+  createPersonalSkillsOBJ(): void {
+    let lang: string | null = '';
+    this.langService.getLang().subscribe(res => {
+      lang = res as string;
+      if (lang === '') {
+        lang = localStorage.getItem('amrMossadWebsiteLanguage');
+      }
+      if (lang === 'en') {
+        this.personalSkillsView.skills = this.personalSkills.skillsEn;
+      } else if (lang === 'ar') {
+        this.personalSkillsView.skills = this.personalSkills.skillsAr;
+      } else if (lang === 'fr') {
+        this.personalSkillsView.skills = this.personalSkills.skillsFr;
+      }
+    });
   }
 }
