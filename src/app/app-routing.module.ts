@@ -24,6 +24,27 @@ const routes: Routes = [
       )
   },
   {
+    path: 'projects',
+    loadChildren: () =>
+      import('./Pages/Projects-Page/projects-page.module').then(
+        m => m.ProjectsPageModule
+      )
+  },
+  {
+    path: 'services',
+    loadChildren: () =>
+      import('./Pages/Services-Page/services-page.module').then(
+        m => m.ServicesPageModule
+      )
+  },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./Pages/Contact-Page/contact-page.module').then(
+        m => m.ContactPageModule
+      )
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'

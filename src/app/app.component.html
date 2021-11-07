@@ -1,5 +1,5 @@
 <mat-drawer-container [class.drawer-opened]="drawer.opened" [dir]="langService.direction">
-  <mat-drawer #drawer class="drawer animate__animated animate__fadeInLeft" mode="side" opened="true">
+  <mat-drawer #drawer class="drawer">
     <mat-toolbar class="header">
       <div style="color: #3f51b5">
         {{'Welcome To My Portfolio' | translate}}
@@ -10,11 +10,10 @@
     </mat-toolbar>
     <br>
     <br>
-    <br>
     <div class="contents">
       <mat-selection-list #shoes [multiple]="false">
         <mat-list-item *ngFor="let link of connectUrls" [routerLink]="link.url" [routerLinkActive]="['active']"
-                       [routerLinkActiveOptions]="{exact: true}">
+                       [routerLinkActiveOptions]="{exact: true}" (click)="drawer.close()">
           <a>{{link.page}}</a>
         </mat-list-item>
       </mat-selection-list>
