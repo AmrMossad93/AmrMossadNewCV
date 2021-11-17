@@ -1,19 +1,19 @@
 <mat-drawer-container [class.drawer-opened]="drawer.opened" [dir]="langService.direction">
   <mat-drawer #drawer class="drawer">
-<!--    <mat-toolbar class="header">-->
-<!--      <div style="color: #3f51b5">-->
-<!--        {{'Welcome To My Portfolio' | translate}}-->
-<!--      </div>-->
-<!--      <mat-icon class="close" style="cursor: pointer;color: #3f51b5;" (click)="drawer.close()">-->
-<!--        close-->
-<!--      </mat-icon>-->
-<!--    </mat-toolbar>-->
+    <!--    <mat-toolbar class="header">-->
+    <!--      <div style="color: #3f51b5">-->
+    <!--        {{'Welcome To My Portfolio' | translate}}-->
+    <!--      </div>-->
+    <!--      <mat-icon class="close" style="cursor: pointer;color: #3f51b5;" (click)="drawer.close()">-->
+    <!--        close-->
+    <!--      </mat-icon>-->
+    <!--    </mat-toolbar>-->
     <br>
     <br>
     <div class="contents">
       <mat-selection-list #shoes [multiple]="false">
         <mat-list-item *ngFor="let link of connectUrls" [routerLink]="link.url" [routerLinkActive]="['active']"
-                       [routerLinkActiveOptions]="{exact: true}" (click)="drawer.close()">
+          [routerLinkActiveOptions]="{exact: true}" (click)="drawer.close()">
           <a>{{link.page | translate}}</a>
         </mat-list-item>
       </mat-selection-list>
@@ -55,5 +55,5 @@
     Français
   </button>
 </mat-menu>
-<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#3f51b5" type="square-loader"
-             [fullScreen]="true"></ngx-spinner>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#3f51b5" type="square-loader" [fullScreen]="true">
+</ngx-spinner>
