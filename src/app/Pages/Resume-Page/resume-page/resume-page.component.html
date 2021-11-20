@@ -1,19 +1,29 @@
 <mat-tab-group mat-align-tabs="center" [backgroundColor]="'primary'">
   <mat-tab label="Work Experience">
     <br>
-    <p-timeline [value]="events1" align="alternate" styleClass="customized-timeline">
-      <ng-template pTemplate="marker" let-event>
-            <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
-                <i [ngClass]="event.icon"></i>
+    <p-timeline [value]="workResumes" align="alternate" styleClass="customized-timeline">
+      <ng-template pTemplate="marker" let-workResume>
+            <span class="custom-marker p-shadow-2" [style.backgroundColor]="workResume.color">
+                <i [ngClass]="workResume.icon"></i>
             </span>
       </ng-template>
-      <ng-template pTemplate="content" let-event>
-        <p-card [header]="event.status" [subheader]="event.date">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-            numquam deserunt
-            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-            quas!</p>
-          <button pButton label="Read more" class="p-button-text"></button>
+      <ng-template pTemplate="content" let-workResume>
+        <p-card [header]="workResume.position" [subheader]="(workResume.companyName) + ' ... ' + workResume.dateOfEmployee">
+          <ul class="list-group list-group-flush text-center">
+            <li *ngFor="let jobRequirement of workResume.jobRequirements" class="list-group-item">
+              {{jobRequirement}}
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-md-12 mt-2">
+              <button mat-flat-button color="primary" class="float-end">
+                <mat-icon>
+                  visibility
+                </mat-icon>
+                View More About {{workResume.companyName}}
+              </button>
+            </div>
+          </div>
         </p-card>
       </ng-template>
     </p-timeline>

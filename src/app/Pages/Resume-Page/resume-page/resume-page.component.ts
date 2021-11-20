@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {PrimeIcons} from 'primeng/api';
+import {ResumeService} from "../../../Services/resume.service";
+import {IResume} from "../../../Interfaces/resume";
 
 @Component({
   selector: 'app-resume-page',
@@ -8,8 +10,9 @@ import {PrimeIcons} from 'primeng/api';
 })
 export class ResumePageComponent implements OnInit {
   events1: any[] = [];
+  workResumes: IResume[] = []
 
-  constructor() {
+  constructor(private resumeService: ResumeService) {
   }
 
   ngOnInit(): void {
@@ -25,6 +28,13 @@ export class ResumePageComponent implements OnInit {
       {status: 'Shipped', date: '15/10/2020 16:15', icon: PrimeIcons.ENVELOPE, color: '#FF9800'},
       {status: 'Delivered', date: '16/10/2020 10:00', icon: PrimeIcons.CHECK, color: '#607D8B'}
     ];
+    this.getWorkResume();
   }
 
+  getWorkResume(): void {
+    this.resumeService.getWorkResume().subscribe(res => {
+      this.workResumes = res;
+      console.log(this.workResumes)
+    })
+  }
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "position": "Senior Front-End Developer (Angular)",
+    "dateOfEmployee": "February 2021 to Present (Full Time)",
+    "companyName": "3D-Diagnostics",
+    "jobRequirements": [
+      "Design and develop Front-End web application",
+      "Building high performance, scalable web applications",
+      "Integrating with REST-Ful and JSON Results",
+      "Unit Testing"
+    ],
+    "details": "My Position Was To Integrate BackEnd API's To Build Applications And I Make Multi App's Like iSmileOn , Connect , QrCodeReader etc...",
+    "icon": "fas fa-briefcase",
+    "color": "#3f51b5"
+  }
+]
