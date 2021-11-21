@@ -5,17 +5,21 @@ import { ResumePageRoutingModule } from './resume-page-routing.module';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import {PrimeNgModule} from "../../DesignModules/prime-ng.module";
 import {AngularMaterialModule} from "../../DesignModules/angular-material.module";
+import { ResumeCompanyDetailsComponent } from './resume-page/resume-company-details/resume-company-details.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 
 @NgModule({
   declarations: [
-    ResumePageComponent
+    ResumePageComponent,
+    ResumeCompanyDetailsComponent
   ],
-    imports: [
-        CommonModule,
-        ResumePageRoutingModule,
-        PrimeNgModule,
-        AngularMaterialModule
-    ]
+  imports: [
+    CommonModule,
+    ResumePageRoutingModule,
+    PrimeNgModule,
+    AngularMaterialModule,
+    TranslateModule
+  ]
 })
 export class ResumePageModule { }

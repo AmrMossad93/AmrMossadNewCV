@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {PrimeIcons} from 'primeng/api';
 import {ResumeService} from "../../../Services/resume.service";
 import {IResume} from "../../../Interfaces/resume";
+import {MatDialog} from "@angular/material/dialog";
+import {ResumeCompanyDetailsComponent} from "./resume-company-details/resume-company-details.component";
 
 @Component({
   selector: 'app-resume-page',
@@ -12,7 +14,7 @@ export class ResumePageComponent implements OnInit {
   events1: any[] = [];
   workResumes: IResume[] = []
 
-  constructor(private resumeService: ResumeService) {
+  constructor(public dialog: MatDialog,private resumeService: ResumeService) {
   }
 
   ngOnInit(): void {
@@ -34,7 +36,14 @@ export class ResumePageComponent implements OnInit {
   getWorkResume(): void {
     this.resumeService.getWorkResume().subscribe(res => {
       this.workResumes = res;
-      console.log(this.workResumes)
     })
+  }
+
+  openCompanyResumeDetails(workResumes: IResume): void {
+    this.dialog.open(ResumeCompanyDetailsComponent, {
+      data: workResumes,
+      width: '50vw',
+      maxHeight: '90vh'
+    });
   }
 }

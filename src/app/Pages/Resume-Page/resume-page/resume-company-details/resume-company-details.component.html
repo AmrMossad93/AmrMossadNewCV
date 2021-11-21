@@ -1,0 +1,25 @@
+<button mat-button (click)="onNoClick()" id="dialog" class="float-end" mat-dialog-close>X</button>
+<h2 mat-dialog-title>{{data.companyName}}</h2>
+<h6 mat-dialog-title>{{data.position}}</h6>
+<mat-dialog-content>
+  <mat-card>
+    <mat-card-title>About {{data.companyName}}</mat-card-title>
+    <mat-card-content>
+      <p>
+       {{data.details.aboutCompany}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+  <br>
+  <mat-card>
+    <mat-card-title>About My Role</mat-card-title>
+    <mat-card-content>
+      <p>
+        {{data.details.myRole}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</mat-dialog-content>
+<mat-dialog-actions *ngIf="data.details.companyURL">
+  <button mat-button color="primary" (click)="goToUrl(data.details.companyURL)">{{data.companyName}} WebSite</button>
+</mat-dialog-actions>
