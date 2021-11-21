@@ -12,9 +12,10 @@ import {ResumeCompanyDetailsComponent} from "./resume-company-details/resume-com
 })
 export class ResumePageComponent implements OnInit {
   events1: any[] = [];
-  workResumes: IResume[] = []
+  workResumes: IResume[] = [];
+  workResumesArr: IResume[] = []
 
-  constructor(public dialog: MatDialog,private resumeService: ResumeService) {
+  constructor(public dialog: MatDialog, private resumeService: ResumeService) {
   }
 
   ngOnInit(): void {
@@ -35,7 +36,7 @@ export class ResumePageComponent implements OnInit {
 
   getWorkResume(): void {
     this.resumeService.getWorkResume().subscribe(res => {
-      this.workResumes = res;
+      this.workResumesArr = this.onGenerateArray(res);
     })
   }
 
@@ -45,5 +46,26 @@ export class ResumePageComponent implements OnInit {
       width: '50vw',
       maxHeight: '90vh'
     });
+  }
+
+  onGenerateArray(workResumes: IResume[]) {
+    let arr: IResume[] = []
+    workResumes.forEach(c => {
+      let x: IResume = {
+        position: c.position,
+        dateOfEmployee: c.dateOfEmployee,
+        companyName: c.companyName,
+        details: c.details,
+        icon: c.icon,
+        jobRequirements: c.jobRequirements,
+        color: this.generateColor(6),
+      }
+      arr.push(x);
+    })
+    return arr;
+  }
+
+  generateColor(size: number): string {
+    return '#' + [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
   }
 }

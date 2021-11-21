@@ -1,7 +1,7 @@
 <mat-tab-group mat-align-tabs="center" [backgroundColor]="'primary'">
   <mat-tab label="Work Experience">
     <br>
-    <p-timeline [value]="workResumes" align="alternate" styleClass="customized-timeline">
+    <p-timeline [value]="workResumesArr" align="alternate" styleClass="customized-timeline">
       <ng-template pTemplate="marker" let-workResume>
             <span class="custom-marker p-shadow-2" [style.backgroundColor]="workResume.color">
                 <i [ngClass]="workResume.icon"></i>
