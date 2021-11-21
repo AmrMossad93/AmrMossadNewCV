@@ -19,5 +19,114 @@
     },
     "icon": "fas fa-briefcase",
     "color": "#3f51b5"
+  },
+  {
+    "position": "Senior Front-End Developer (Angular)",
+    "dateOfEmployee": "September 2021 to Present (Part Time)",
+    "companyName": "Khayall",
+    "jobRequirements": [
+      "Design and develop Front-End web application",
+      "Building high performance, scalable web applications",
+      "Integrating with REST-Ful and JSON Results",
+      "Unit Testing"
+    ],
+    "details": {
+      "companyURL": "https://khyall.com/",
+      "myRole": "My Position Was To Integrate BackEnd API's To Build Applications And I Make Multi App's Like  CRM App , Qanouny Landing App , Road public site & Road management site  etc...",
+      "aboutCompany": "Khyall is A Start-Up Company For Developing Web Applications."
+    },
+    "icon": "fas fa-briefcase",
+    "color": "#3f51b5"
+  },
+  {
+    "position": "Senior Front-End Developer (Angular)",
+    "dateOfEmployee": "March 2020 to February 2021",
+    "companyName": "UniLearn",
+    "jobRequirements": [
+      "Design and develop Front-End web application",
+      "Building high performance, scalable web applications",
+      "Integrating with REST-Ful and JSON Results",
+      "Unit Testing"
+    ],
+    "details": {
+      "companyURL": null,
+      "myRole": "My Position Was To Integrate BackEnd API's To Build Applications And I Make Multi App's Like  Personal Exam Management , School Exam Management etc...",
+      "aboutCompany": "UniLearn is A German Start-Up Company For Developing Web & Mobile Applications."
+    },
+    "icon": "fas fa-briefcase",
+    "color": "#3f51b5"
+  },
+  {
+    "position": "Senior Front-End Developer (Angular- Ionic)",
+    "dateOfEmployee": "December 2019 to September 2021 (Part Time)",
+    "companyName": "Seen Solutions",
+    "jobRequirements": [
+      "Design and develop Front-End web & mobile application",
+      "Building high performance, scalable web & mobile  applications",
+      "Integrating with REST-Ful and JSON Results",
+      "Unit Testing"
+    ],
+    "details": {
+      "companyURL": "https://www.seen.solutions",
+      "myRole": "My Position Was To Integrate BackEnd API's To Build Applications And I Make Multi App's Like  New Giza Mobile App , SeiF Pharmacy Mobile App etc...",
+      "aboutCompany": "Seen Solutions is A Saudi Arabian Start-Up Company For Developing Web & Mobile Applications."
+    },
+    "icon": "fas fa-briefcase",
+    "color": "#3f51b5"
+  },
+  {
+    "position": "Mid-Senior Front-End Developer (Angular)",
+    "dateOfEmployee": " March 2019 to January 2020",
+    "companyName": "IAIAUTO  (ELMOURAD GROUP)",
+    "jobRequirements": [
+      "Design and develop Front-End web application",
+      "Building high performance, scalable web applications",
+      "Integrating with REST-Ful and JSON Results",
+      "Unit Testing"
+    ],
+    "details": {
+      "companyURL": null,
+      "myRole": "My Position Was To Integrate BackEnd API's To Build Applications And I Make Multi App's Like SYNDICATE OF ARTIST'S  App & ERP App etc...",
+      "aboutCompany": "IAIAUTO is A Egyptian Start-Up Company For Developing Web & Mobile Applications."
+    },
+    "icon": "fas fa-briefcase",
+    "color": "#3f51b5"
+  },
+  {
+    "position": "Junior Front-End Developer (Angular)",
+    "dateOfEmployee": " December 2018 to February 2019",
+    "companyName": "D.M.S. Egypt",
+    "jobRequirements": [
+      "Design and develop Front-End web application",
+      "Building high performance, scalable web applications",
+      "Integrating with REST-Ful and JSON Results",
+      "Unit Testing"
+    ],
+    "details": {
+      "companyURL": null,
+      "myRole": "My Position Was To Integrate BackEnd API's To Build Applications And I Make Multi App's Like Insurance App.",
+      "aboutCompany": "D.M.S. is A Egyptian Company For Developing Web & Mobile Insurance Applications."
+    },
+    "icon": "fas fa-briefcase",
+    "color": "#3f51b5"
+  },
+  {
+    "position": "Junior Full-Stack Developer (Angular - ASP.Net)",
+    "dateOfEmployee": " December 2017 to November 2018",
+    "companyName": "2M Technology",
+    "jobRequirements": [
+      "Design and develop Front-End web application",
+      "Building high performance, scalable web applications",
+      "Building Web API's By ASP.Net",
+      "Integrating with REST-Ful and JSON Results",
+      "Unit Testing"
+    ],
+    "details": {
+      "companyURL": null,
+      "myRole": "My Position Was To Integrate BackEnd API's To Build Applications And Generate API's And I Make Multi App's Like School Management And ERP Modules.",
+      "aboutCompany": "2M Technology is A Egyptian Start-Up Company For Developing Web & Mobile Insurance Applications."
+    },
+    "icon": "fas fa-briefcase",
+    "color": "#3f51b5"
   }
 ]
