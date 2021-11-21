@@ -4,6 +4,7 @@ import {ResumeService} from "../../../Services/resume.service";
 import {IResume} from "../../../Interfaces/resume";
 import {MatDialog} from "@angular/material/dialog";
 import {ResumeCompanyDetailsComponent} from "./resume-company-details/resume-company-details.component";
+import {IEducationResume} from "../../../Interfaces/education-resume";
 
 @Component({
   selector: 'app-resume-page',
@@ -11,32 +12,26 @@ import {ResumeCompanyDetailsComponent} from "./resume-company-details/resume-com
   styleUrls: ['./resume-page.component.scss']
 })
 export class ResumePageComponent implements OnInit {
-  events1: any[] = [];
-  workResumes: IResume[] = [];
-  workResumesArr: IResume[] = []
+  workResumesArr: IResume[] = [];
+  educationResumesArr: IEducationResume[] = [];
 
   constructor(public dialog: MatDialog, private resumeService: ResumeService) {
   }
 
   ngOnInit(): void {
-    this.events1 = [
-      {
-        status: 'Ordered',
-        date: '15/10/2020 10:30',
-        icon: PrimeIcons.SHOPPING_CART,
-        color: '#9C27B0',
-        image: 'game-controller.jpg'
-      },
-      {status: 'Processing', date: '15/10/2020 14:00', icon: PrimeIcons.COG, color: '#673AB7'},
-      {status: 'Shipped', date: '15/10/2020 16:15', icon: PrimeIcons.ENVELOPE, color: '#FF9800'},
-      {status: 'Delivered', date: '16/10/2020 10:00', icon: PrimeIcons.CHECK, color: '#607D8B'}
-    ];
     this.getWorkResume();
+    this.getEducationResume();
   }
 
   getWorkResume(): void {
     this.resumeService.getWorkResume().subscribe(res => {
       this.workResumesArr = this.onGenerateArray(res);
+    })
+  }
+
+  getEducationResume(): void {
+    this.resumeService.getEducationResume().subscribe(res => {
+      this.educationResumesArr = this.onGenerateEducationArray(res);
     })
   }
 
@@ -58,6 +53,22 @@ export class ResumePageComponent implements OnInit {
         details: c.details,
         icon: c.icon,
         jobRequirements: c.jobRequirements,
+        color: this.generateColor(6),
+      }
+      arr.push(x);
+    })
+    return arr;
+  }
+
+  onGenerateEducationArray(educationResumes: IEducationResume[]) {
+    let arr: IEducationResume[] = []
+    educationResumes.forEach(c => {
+      let x: IEducationResume = {
+        position: c.position,
+        dateOfGraduation: c.dateOfGraduation,
+        studyPlace: c.studyPlace,
+        details: c.details,
+        icon: c.icon,
         color: this.generateColor(6),
       }
       arr.push(x);
