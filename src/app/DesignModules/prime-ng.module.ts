@@ -12,7 +12,8 @@ import {TooltipModule} from 'primeng/tooltip';
 import {OverlayPanelModule} from 'primeng/overlaypanel';
 import {TagModule} from 'primeng/tag';
 import {SpeedDialModule} from 'primeng/speeddial';
-
+import {TimelineModule} from 'primeng/timeline';
+import {CardModule} from "primeng/card";
 const primeNgModule = [
   ButtonModule,
   ToastModule,
@@ -25,7 +26,9 @@ const primeNgModule = [
   TooltipModule,
   OverlayPanelModule,
   TagModule,
-  SpeedDialModule
+  SpeedDialModule,
+  TimelineModule,
+  CardModule
 ];
 
 @NgModule({
