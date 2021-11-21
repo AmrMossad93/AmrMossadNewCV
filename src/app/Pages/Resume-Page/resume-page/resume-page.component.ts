@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {PrimeIcons} from 'primeng/api';
 import {ResumeService} from "../../../Services/resume.service";
 import {IResume} from "../../../Interfaces/resume";
 import {MatDialog} from "@angular/material/dialog";
 import {ResumeCompanyDetailsComponent} from "./resume-company-details/resume-company-details.component";
 import {IEducationResume} from "../../../Interfaces/education-resume";
+import {ICertificate} from "../../../Interfaces/certificate";
 
 @Component({
   selector: 'app-resume-page',
@@ -14,6 +14,7 @@ import {IEducationResume} from "../../../Interfaces/education-resume";
 export class ResumePageComponent implements OnInit {
   workResumesArr: IResume[] = [];
   educationResumesArr: IEducationResume[] = [];
+  certificates: ICertificate[] = [];
 
   constructor(public dialog: MatDialog, private resumeService: ResumeService) {
   }
@@ -21,6 +22,7 @@ export class ResumePageComponent implements OnInit {
   ngOnInit(): void {
     this.getWorkResume();
     this.getEducationResume();
+    this.getMyCertificate();
   }
 
   getWorkResume(): void {
@@ -32,6 +34,12 @@ export class ResumePageComponent implements OnInit {
   getEducationResume(): void {
     this.resumeService.getEducationResume().subscribe(res => {
       this.educationResumesArr = this.onGenerateEducationArray(res);
+    })
+  }
+
+  getMyCertificate(): void {
+    this.resumeService.getMyCertificate().subscribe(res => {
+      this.certificates = res
     })
   }
 

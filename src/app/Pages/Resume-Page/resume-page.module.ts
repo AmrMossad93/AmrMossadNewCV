@@ -7,6 +7,7 @@ import {PrimeNgModule} from "../../DesignModules/prime-ng.module";
 import {AngularMaterialModule} from "../../DesignModules/angular-material.module";
 import { ResumeCompanyDetailsComponent } from './resume-page/resume-company-details/resume-company-details.component';
 import {TranslateModule} from "@ngx-translate/core";
+import {WidgetsModule} from "../../Widgets/widgets.module";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {TranslateModule} from "@ngx-translate/core";
     ResumePageRoutingModule,
     PrimeNgModule,
     AngularMaterialModule,
-    TranslateModule
+    TranslateModule,
+    WidgetsModule
   ]
 })
 export class ResumePageModule { }

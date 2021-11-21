@@ -1,50 +1,71 @@
-<mat-tab-group mat-align-tabs="center" [backgroundColor]="'primary'">
-  <mat-tab label="Work Experience">
-    <br>
-    <p-timeline [value]="workResumesArr" align="alternate" styleClass="customized-timeline">
-      <ng-template pTemplate="marker" let-workResume>
+<div class="container">
+  <app-card title="{{'Let Me Show You My Certificates' | translate}}" subTitle="{{'My Resume' | translate}}" [showProgress]="false">
+    <div class="row">
+      <div class="col-md-3 mb-2 text-center" *ngFor="let certificate of certificates">
+        <p-image [src]="certificate.certificatePath" [alt]="certificate.certificateName" width="250"
+                 [preview]="true">
+          <ng-template pTemplate="indicator">
+            <span class="text-center p-1">{{certificate.certificateName}}</span>
+          </ng-template>
+        </p-image>
+      </div>
+    </div>
+  </app-card>
+  <br>
+  <app-card title="{{'Let Me Show You My Experiences' | translate}}" subTitle="{{'My Resume' | translate}}" [showProgress]="false">
+    <mat-tab-group mat-align-tabs="center" [backgroundColor]="'primary'">
+      <mat-tab label="Work Experience">
+        <br>
+        <p-timeline [value]="workResumesArr" align="alternate" styleClass="customized-timeline">
+          <ng-template pTemplate="marker" let-workResume>
             <span class="custom-marker p-shadow-2" [style.backgroundColor]="workResume.color">
                 <i [ngClass]="workResume.icon"></i>
             </span>
-      </ng-template>
-      <ng-template pTemplate="content" let-workResume>
-        <p-card [header]="workResume.position" [subheader]="(workResume.companyName) + ' ... ' + workResume.dateOfEmployee">
-          <ul class="list-group list-group-flush text-center">
-            <li *ngFor="let jobRequirement of workResume.jobRequirements" class="list-group-item">
-              {{jobRequirement}}
-            </li>
-          </ul>
-          <div class="row">
-            <div class="col-md-12 mt-2">
-              <button mat-flat-button color="primary" class="float-end" (click)="openCompanyResumeDetails(workResume)">
-                <mat-icon>
-                  visibility
-                </mat-icon>
-                View More About {{workResume.companyName}}
-              </button>
-            </div>
-          </div>
-        </p-card>
-      </ng-template>
-    </p-timeline>
-  </mat-tab>
-  <mat-tab label="Education">
-    <br>
-    <p-timeline [value]="educationResumesArr" align="alternate" styleClass="customized-timeline">
-      <ng-template pTemplate="marker" let-educationResume>
+          </ng-template>
+          <ng-template pTemplate="content" let-workResume>
+            <p-card [header]="workResume.position"
+                    [subheader]="(workResume.companyName) + ' ... ' + workResume.dateOfEmployee">
+              <ul class="list-group list-group-flush text-center">
+                <li *ngFor="let jobRequirement of workResume.jobRequirements" class="list-group-item">
+                  {{jobRequirement}}
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col-md-12 mt-2">
+                  <button mat-flat-button color="primary" class="float-end" (click)="openCompanyResumeDetails(workResume)">
+                    <mat-icon>
+                      visibility
+                    </mat-icon>
+                    View More About {{workResume.companyName}}
+                  </button>
+                </div>
+              </div>
+            </p-card>
+          </ng-template>
+        </p-timeline>
+      </mat-tab>
+      <mat-tab label="Education">
+        <br>
+        <p-timeline [value]="educationResumesArr" align="alternate" styleClass="customized-timeline">
+          <ng-template pTemplate="marker" let-educationResume>
             <span class="custom-marker p-shadow-2" [style.backgroundColor]="educationResume.color">
                 <i [ngClass]="educationResume.icon"></i>
             </span>
-      </ng-template>
-      <ng-template pTemplate="content" let-educationResume>
-        <p-card [header]="educationResume.position" [subheader]="(educationResume.studyPlace) + ' ... ' + educationResume.dateOfGraduation">
-          <p>
-            {{educationResume.details}}
-          </p>
-        </p-card>
-      </ng-template>
-    </p-timeline>
-  </mat-tab>
-</mat-tab-group>
+          </ng-template>
+          <ng-template pTemplate="content" let-educationResume>
+            <p-card [header]="educationResume.position"
+                    [subheader]="(educationResume.studyPlace) + ' ... ' + educationResume.dateOfGraduation">
+              <p>
+                {{educationResume.details}}
+              </p>
+            </p-card>
+          </ng-template>
+        </p-timeline>
+      </mat-tab>
+    </mat-tab-group>
+  </app-card>
+</div>
+
+
 
 
