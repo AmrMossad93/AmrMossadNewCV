@@ -13,7 +13,7 @@
     <div class="contents">
       <mat-selection-list #shoes [multiple]="false">
         <mat-list-item *ngFor="let link of connectUrls" [routerLink]="link.url" [routerLinkActive]="['active']"
-          [routerLinkActiveOptions]="{exact: true}" (click)="drawer.close()">
+                       [routerLinkActiveOptions]="{exact: true}" (click)="drawer.close()">
           <a>{{link.page | translate}}</a>
         </mat-list-item>
       </mat-selection-list>
@@ -38,10 +38,12 @@
 
   <mat-toolbar class="main footer animate__animated animate__fadeInUp" color="primary">
     <div class="flex-spacer"></div>
-    <button mat-raised-button class="m-1">Feedback</button>
-    <button mat-raised-button class="m-1">Online Assistants</button>
-    <button mat-raised-button class="m-1">Toll-Free: 1-866-834-7925</button>
-    <button mat-raised-button class="m-1">Tutorials</button>
+    <!--    <button mat-raised-button class="m-1">Feedback</button>-->
+    <!--    <button mat-raised-button class="m-1">Online Assistants</button>-->
+    <!--    <button mat-raised-button class="m-1">Toll-Free: 1-866-834-7925</button>-->
+    <a href="assets/MyLatestCV/Sofware%20Engineer%20Amr%20Mossad.pdf" download mat-raised-button class="m-1">
+      Download My CV
+    </a>
   </mat-toolbar>
 </mat-drawer-container>
 <mat-menu #menu="matMenu">

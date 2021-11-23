@@ -59,13 +59,16 @@ mat-card-subtitle {
   background-color: $primary-color !important;
   transition: width 0.6s ease;
 }
+
 .p-image-toolbar {
   display: block !important;
   z-index: 9999999999999
 }
+
 .p-image-action.p-link i {
   color: $primary-color;
 }
+
 @keyframes gradient2 {
   0% {
     background-position: 0 50%;
