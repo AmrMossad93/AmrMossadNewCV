@@ -69,6 +69,19 @@ mat-card-subtitle {
   color: $primary-color;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: $primary-color;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
 @keyframes gradient2 {
   0% {
     background-position: 0 50%;
