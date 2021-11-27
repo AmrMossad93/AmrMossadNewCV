@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
   ];
   currentUrl: string = '';
   lang = localStorage.getItem('amrMossadWebsiteLanguage');
+
   // @ts-ignore
   constructor(@Inject(DOCUMENT) private document, public langService: LangService, public router: Router, private loaderService: LoaderService) {
     if (!localStorage.getItem('amrMossadWebsiteLanguage')) {
@@ -41,5 +42,9 @@ export class AppComponent implements OnInit {
       }
       window.scrollTo(0, 0);
     });
+  }
+
+  onNavigate(url: string): void {
+    window.open(url, '_blank');
   }
 }
