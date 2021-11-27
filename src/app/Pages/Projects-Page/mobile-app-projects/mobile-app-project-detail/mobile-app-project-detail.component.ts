@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-mobile-app-project-detail',
@@ -6,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mobile-app-project-detail.component.scss']
 })
 export class MobileAppProjectDetailComponent implements OnInit {
+  projectId: number = 0;
 
-  constructor() { }
+  constructor(private activeRoute: ActivatedRoute) {
+    this.activeRoute.params.subscribe(params => {
+      if (params['projectId']) {
+        this.projectId = +params['projectId']
+      }
+    })
+  }
 
   ngOnInit(): void {
   }
