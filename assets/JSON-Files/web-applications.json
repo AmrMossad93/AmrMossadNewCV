@@ -1,0 +1,421 @@
+[
+  {
+    "id": 1,
+    "projectName": "ClassTech Public Site",
+    "projectDetail": "It Was The Portfolio For ClassTech Company To Know The ClassTech Details News , Features , Contact And Choose A A Request To Use There Apps.",
+    "type": "Web-Applications",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 10 , PrimNg , Bootstrap , TypeScript , Fontawesome , Material Icons",
+    "client": "UniLearn Egypt",
+    "category": "Education",
+    "webSiteURL": "https://classtechonline.com/",
+    "images": [
+      "assets/Images/Projects/ClassTechPublic.png",
+      "assets/Images/Projects/ClasstechPublicSite/1.png",
+      "assets/Images/Projects/ClasstechPublicSite/2.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 2,
+    "projectName": "ClassTech Admin Panel",
+    "type": "Web-Applications",
+    "projectDetail": "It Was The Admin Panel For ClassTech Company To Contact With The Request Of The Clients And May Add News And May Configure New Features.",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 10 , PrimNg , Bootstrap 4, TypeScript , Fontawesome , Material Icons",
+    "client": "UniLearn Egypt",
+    "category": "Education",
+    "webSiteURL": "https://uniadmin.classtechonline.com/",
+    "images": [
+      "assets/Images/Projects/ClassTechAdminPanel.jpg",
+      "assets/Images/Projects/ClassTechAdminPanel/1.png",
+      "assets/Images/Projects/ClassTechAdminPanel/2.png",
+      "assets/Images/Projects/ClassTechAdminPanel/3.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 3,
+    "projectName": "Personal Exam Module",
+    "type": "Web-Applications",
+    "projectDetail": "It Was An Exam Module Which Teacher May Create Exams To Students And Get Reports To Evaluate His Students.",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 10 , PrimNg , Bootstrap 4, TypeScript , Fontawesome , Material Icons, Angular Material",
+    "client": "UniLearn Egypt",
+    "category": "Education",
+    "webSiteURL": "https://pilotpersonal.classtechonline.com/",
+    "images": [
+      "assets/Images/Projects/Personal.png",
+      "assets/Images/Projects/Personal/1.png",
+      "assets/Images/Projects/Personal/2.png",
+      "assets/Images/Projects/Personal/3.png",
+      "assets/Images/Projects/Personal/4.png",
+      "assets/Images/Projects/Personal/5.png",
+      "assets/Images/Projects/Personal/6.png",
+      "assets/Images/Projects/Personal/7.png",
+      "assets/Images/Projects/Personal/8.png",
+      "assets/Images/Projects/Personal/9.png",
+      "assets/Images/Projects/Personal/10.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 4,
+    "projectName": "School Exam Module",
+    "type": "Web-Applications",
+    "projectDetail": "It Was A School Application That The Headmaster May Add Teacher , Students , Parent And The Teacher Can Create Exams To Evaluate The Students And Parents May Know Their Children Details.",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 11 , PrimNg , Bootstrap 4, TypeScript , Fontawesome , Material Icons, Angular Material",
+    "client": "UniLearn Egypt",
+    "category": "Education",
+    "webSiteURL": "https://pilotschool.classtechonline.com/",
+    "images": [
+      "assets/Images/Projects/School Unilearn.png",
+      "assets/Images/Projects/School Unilearn.png",
+      "assets/Images/Projects/School Unilearn.png",
+      "assets/Images/Projects/School Unilearn.png",
+      "assets/Images/Projects/School Unilearn.png",
+      "assets/Images/Projects/School Unilearn.png",
+      "assets/Images/Projects/School Unilearn.png",
+      "assets/Images/Projects/School Unilearn.png",
+      "assets/Images/Projects/School Unilearn.png",
+      "assets/Images/Projects/School Unilearn.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 5,
+    "projectName": "Grand Electronic Public Site",
+    "projectDetail": "It Was A Public Site For Grand Electronics Which Can View The Products For The Company And The User May Order And Contact With The Company.",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawesome",
+    "client": "Grand Electronics",
+    "category": "CMS",
+    "webSiteURL": "https://grand-electronic-eg.com/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/GrandPublicSite.jpg",
+      "assets/Images/Projects/GrandPublic/1.png",
+      "assets/Images/Projects/GrandPublic/2.jpg",
+      "assets/Images/Projects/GrandPublic/3.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 6,
+    "projectName": "Grand Electronic Admin Panel",
+    "projectDetail": "It Was The Admin Panel For Grand Electronics Which Can The Company Can Control The Public Site And Add Products To It.",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawesome, PrimeNg",
+    "client": "Grand Electronics",
+    "category": "CMS",
+    "webSiteURL": "https://grand-electronic-eg.com/admin",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/GrandAdminPanel.jpg",
+      "assets/Images/Projects/GrandAdmin/1.png",
+      "assets/Images/Projects/GrandAdmin/2.png",
+      "assets/Images/Projects/GrandAdmin/3.png",
+      "assets/Images/Projects/GrandAdmin/4.png",
+      "assets/Images/Projects/GrandAdmin/5.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 7,
+    "projectName": "Lotfy Group Public Site",
+    "projectDetail": "It Was A Public Site For Lotfy Group Which Can View The Products For The Company And The User May Order And Contact With The Company.",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawesome",
+    "client": "Lotfy Group",
+    "category": "CMS",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/LgPublic.png",
+      "assets/Images/Projects/LgPublic/1.jpg",
+      "assets/Images/Projects/LgPublic/2.jpg",
+      "assets/Images/Projects/LgPublic/3.jpg",
+      "assets/Images/Projects/LgPublic/4.jpg",
+      "assets/Images/Projects/LgPublic/5.jpg",
+      "assets/Images/Projects/LgPublic/6.jpg"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 8,
+    "projectName": "Lotfy Group Admin Panel",
+    "projectDetail": "It Was The Admin Panel For Lotfy Group Which Can The Company Can Control The Public Site And Add Products To It.",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawesome, PrimeNg",
+    "client": "Lotfy Group",
+    "category": "CMS",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/LGAdmin.png",
+      "assets/Images/Projects/LgAdmin/1.jpg",
+      "assets/Images/Projects/LgAdmin/2.png",
+      "assets/Images/Projects/LgAdmin/3.png",
+      "assets/Images/Projects/LgAdmin/4.png",
+      "assets/Images/Projects/LgAdmin/5.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 9,
+    "projectName": "COVID-19 Tracker",
+    "projectDetail": "It Was COVID-19 Tracker To Get The Count Of Infected , Recovered ANd Deaths People.",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawesome, PrimeNg",
+    "client": "EMD4IT",
+    "category": "Medical",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/COVID-19-Tracker.png",
+      "assets/Images/Projects/Covid-19/1.png",
+      "assets/Images/Projects/Covid-19/2.png",
+      "assets/Images/Projects/Covid-19/3.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 10,
+    "projectName": "HR Module",
+    "projectDetail": "It Was An HR Module Demo To ADD EDIT GET & Delete Employee",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 9 , Bootstrap 4, TypeScript , Fontawesome, PrimeNg, FireBase",
+    "client": "EMD4IT",
+    "category": "HR",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/HR.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 11,
+    "projectName": "M.A.S.A. Development",
+    "projectDetail": "It Was An Static Site For The Company",
+    "coreDevelopment": "HTML5 , CSS3 , SASS , Bootstrap 4 , Fontawesome",
+    "client": "EMD4IT",
+    "category": "CMS",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/MASA Project.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 12,
+    "projectName": "Digital Upstricke",
+    "projectDetail": "It Was Performance Analysis For Players & I was Customizing The Teams",
+    "coreDevelopment": "Angular 8, TypeScript , HTML5, CSS3 , ES6 , Bootstrap 4 ,Fontawesome , PrimeNg",
+    "client": "Upstricke",
+    "category": "Sports",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/UpStricke.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 13,
+    "projectName": "SYNDICATE OF ARTIST'S",
+    "projectDetail": "It Was A Social Website For Artists & Get The Latest News Of The Artists.",
+    "coreDevelopment": "Angular 7, TypeScript , HTML5, CSS3 , ES6 , Bootstrap 4 ,Fontawesome , PrimeNg",
+    "client": "SYNDICATE OF ARTIST'S",
+    "category": "Social",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/ESA.jpg"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 14,
+    "projectName": "PUBG",
+    "projectDetail": "PUBG Fun With Bullet Sound.",
+    "coreDevelopment": "HTML5 CSS3 And Vanilla Javascript",
+    "client": "Me",
+    "category": "Tricks",
+    "webSiteURL": "https://amrmossad93.github.io/pubgTricks/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/PUBG.jpg"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 15,
+    "projectName": "EMD4IT Official WebSite",
+    "projectDetail": "Its A Public Site Was Made To Get The Latest News For The Company.",
+    "coreDevelopment": "Angular 9 , TypeScript , HTML5 , CSS3 , FontAwesome , Bootstrap 4 And jQuery",
+    "client": "EMD4IT",
+    "category": "Social",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/EMD4IT.png",
+      "assets/Images/Projects/EMD4IT/1.jpg",
+      "assets/Images/Projects/EMD4IT/2.png",
+      "assets/Images/Projects/EMD4IT/3.jpg",
+      "assets/Images/Projects/EMD4IT/4.jpg"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 16,
+    "projectName": "Agency Template",
+    "projectDetail": "Its A Public Site Was Made To Get The Latest News For The Agency.",
+    "coreDevelopment": "HTML5 , CSS3 , Bootstrap 4, FontAwesome And Some Animations.",
+    "client": "Freelance",
+    "category": "Social",
+    "webSiteURL": "https://amrmossad93.github.io/templateOne/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/Template !.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 17,
+    "projectName": "Clock",
+    "projectDetail": "CSS 3D Working Analog Clock UI Design.",
+    "coreDevelopment": "Html5 CSS3 & Javascript.",
+    "client": "Freelance",
+    "category": "Tricks",
+    "webSiteURL": "https://amrmossad93.github.io/clockTricks/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/Clock.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 18,
+    "projectName": "Single Page",
+    "projectDetail": "Its A Public Site Was Made To Get The Latest News For The Company.",
+    "coreDevelopment": "Angular 9 , HTML5 , CSS3 & jQuery.",
+    "client": "EMD4IT",
+    "category": "Social",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/SingleWebsite.jpg"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 19,
+    "projectName": "School",
+    "projectDetail": "Its A Public Site Was Made To Get The Latest News For The School.",
+    "coreDevelopment": "HTML5 , CSS3 , Bootstrap 3, FontAwesome And Animations..",
+    "client": "Freelance",
+    "category": "Education",
+    "webSiteURL": "https://amrmossad93.github.io/SchoolTemplate/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/School.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 20,
+    "projectName": "Movie",
+    "projectDetail": "Its A Public Site Was Made To Get The Latest News For The Movie.",
+    "coreDevelopment": "HTML5 , CSS3 , Bootstrap 3, FontAwesome And Animations..",
+    "client": "Me",
+    "category": "Tricks",
+    "webSiteURL": "https://amrmossad93.github.io/Joker-Website/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/Joker.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 21,
+    "projectName": "Coffee Shop",
+    "projectDetail": "Its A Public Site Was Made To Get The Latest News For The Coffee Shop.",
+    "coreDevelopment": "HTML5 , CSS3 , Bootstrap 3, FontAwesome And Animations..",
+    "client": "Me",
+    "category": "Tricks",
+    "webSiteURL": "https://amrmossad93.github.io/CofeeShop/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/Cofee.jpg"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 22,
+    "projectName": "School Management",
+    "projectDetail": "It Was A School Management Application.",
+    "coreDevelopment": "HTML5 , CSS3 , Bootstrap 3, FontAwesome, Webforms, SQL Server ,DevExpress",
+    "client": "2M Technology",
+    "category": "Education",
+    "webSiteURL": null,
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/school-managment.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 23,
+    "projectName": "Insurance",
+    "projectDetail": "It Was A Insurance Application.",
+    "coreDevelopment": "Angular 4 , TypeScript , HTML5, CSS3 , ES6 , Bootstrap 4 , Fontawsome",
+    "client": "D.M.S. Egypt",
+    "category": "Education",
+    "webSiteURL": null,
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/wordpress-insurance-themes.jpg"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 24,
+    "projectName": "Calculator",
+    "projectDetail": "Calculator.",
+    "coreDevelopment": "Html5 CSS3 & JavaScript",
+    "client": "Me",
+    "category": "Tricks",
+    "webSiteURL": "https://amrmossad93.github.io/calcuatorTricks/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/Calculator.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 25,
+    "projectName": "Scroll Bar",
+    "projectDetail": "Creative Page Scroll Progress Bar.",
+    "coreDevelopment": "Html5 CSS3 & Vanilla JavaScript",
+    "client": "Me",
+    "category": "Tricks",
+    "webSiteURL": "https://amrmossad93.github.io/Scroll-Bar/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/Scroll-Progress-Bar.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 26,
+    "projectName": "CheckBox",
+    "projectDetail": "Glowing Light Custom Checkbox .",
+    "coreDevelopment": "Html5 CSS3 & Animations",
+    "client": "Me",
+    "category": "Tricks",
+    "webSiteURL": "https://amrmossad93.github.io/Glowing-Light-Custom-Checkbox/",
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/Glowing-Light-Custom-Checkbox.png"
+    ],
+    "videoUrl": null
+  },
+  {
+    "id": 27,
+    "projectName": "HR",
+    "projectDetail": "It Was A HR Application.",
+    "coreDevelopment": "ASP.Net Web API , SQL Server And Making The Reports By Using DevExpress And Creating The Stored Procedure's .",
+    "client": "2M Technology",
+    "category": "HR",
+    "webSiteURL": null,
+    "type": "Web-Applications",
+    "images": [
+      "assets/Images/Projects/convex-1024x679.jpg"
+    ],
+    "videoUrl": null
+  }
+]
