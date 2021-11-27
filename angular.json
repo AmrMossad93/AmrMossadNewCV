@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/AmrMossadNewCV",
             "index": "src/index.html",
             "baseHref" : "/AmrMossadNewCV/",
             "main": "src/main.ts",
