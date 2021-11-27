@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ISubNav} from "../../../Interfaces/sub-nav";
+import {ProjectsService} from "../../../Services/projects.service";
+import {IMobileApplications} from "../../../Interfaces/mobile-applications";
 
 @Component({
   selector: 'app-mobile-app-projects',
@@ -9,8 +11,9 @@ import {ISubNav} from "../../../Interfaces/sub-nav";
 export class MobileAppProjectsComponent implements OnInit {
 
   subNavRoutes: ISubNav[] = [];
+  mobileApplications: IMobileApplications[] = []
 
-  constructor() {
+  constructor(private projectsService: ProjectsService) {
   }
 
   ngOnInit(): void {
@@ -18,6 +21,12 @@ export class MobileAppProjectsComponent implements OnInit {
       {title: 'Web Applications', route: '/projects/web-applications'},
       {title: 'Mobile Applications', route: '/projects/mobile-applications'}
     ];
+    this.getMobileApplications();
   }
 
+  getMobileApplications(): void {
+    this.projectsService.getMobileApplications().subscribe(res => {
+      this.mobileApplications = res;
+    })
+  }
 }

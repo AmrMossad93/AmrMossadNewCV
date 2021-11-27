@@ -1,5 +1,26 @@
 <app-sub-nav-bar [subNavRoutes]="subNavRoutes"></app-sub-nav-bar>
 <app-card [subTitle]="'Here You Are My Mobile Applications'" [title]="'Mobile Applications'" [showProgress]="false">
-  <p>mobile-app-projects works!</p>
+  <div class="row">
+    <div class="col-md-3 mb-3" *ngFor="let app of mobileApplications">
+      <mat-card class="w-100">
+        <mat-card-header>
+          <mat-card-title>{{app.projectName}}</mat-card-title>
+          <mat-card-subtitle>{{app.client}} - ({{app.category}})</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="app.images[0]" [alt]="app.projectName">
+        <mat-card-content>
+          <p>
+            {{app.projectDetail}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button class="w-100" color="primary">
+            See More About {{app.projectName}}
+          </button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+  </div>
 </app-card>
 

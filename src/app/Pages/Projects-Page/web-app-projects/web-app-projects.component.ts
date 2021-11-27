@@ -25,7 +25,6 @@ export class WebAppProjectsComponent implements OnInit {
 
   getWebApplications(): void {
     this.projectsService.getWebApplications().subscribe(res => {
-      console.log(res)
       this.webApplications = res;
     })
   }
