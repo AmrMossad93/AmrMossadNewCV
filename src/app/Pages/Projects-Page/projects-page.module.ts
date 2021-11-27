@@ -5,6 +5,7 @@ import { ProjectsPageRoutingModule } from './projects-page-routing.module';
 import { WebAppProjectsComponent } from './web-app-projects/web-app-projects.component';
 import { MobileAppProjectsComponent } from './mobile-app-projects/mobile-app-projects.component';
 import {WidgetsModule} from "../../Widgets/widgets.module";
+import {AngularMaterialModule} from "../../DesignModules/angular-material.module";
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {WidgetsModule} from "../../Widgets/widgets.module";
     imports: [
         CommonModule,
         ProjectsPageRoutingModule,
-        WidgetsModule
+        WidgetsModule,
+        AngularMaterialModule
     ]
 })
 export class ProjectsPageModule { }
