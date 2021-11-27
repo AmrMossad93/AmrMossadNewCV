@@ -54,7 +54,6 @@ export class WebAppProjectDetailComponent implements OnInit {
     this.projectsService.getWebApplications().subscribe(res => {
       this.webApplication = <IWebApplications>res.find(c => c.id === this.projectId);
       this.showProgress = false;
-      console.log(this.webApplication)
     })
   }
 }
