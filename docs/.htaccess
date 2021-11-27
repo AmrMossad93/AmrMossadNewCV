@@ -2,10 +2,19 @@
 # https://julianpoemp.github.io/ngx-htaccess-generator/
 
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  # Redirection of requests to index.html
-  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
-  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-  RewriteRule ^.*$ - [NC,L]
-  RewriteRule ^(.*) index.html [NC,L]
+ # -- REDIRECTION to https:
+ RewriteCond %{HTTPS} off
+ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+ # --
+
+ #-- Allow direct to /php
+ RewriteCond %{REQUEST_URI} "php/" [OR]
+ RewriteRule (.*) $1 [L]
+
+ #-- Redirect remaining to angular app
+ RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+ RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+
+ RewriteRule ^.*$ - [NC,L]
+ RewriteRule ^(.*) index.html [NC,L]
 </IfModule>
