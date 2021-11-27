@@ -2,10 +2,10 @@
 # https://julianpoemp.github.io/ngx-htaccess-generator/
 
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  # Redirection of requests to index.html
-  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
-  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-  RewriteRule ^.*$ - [NC,L]
-  RewriteRule ^(.*) index.html [NC,L]
+  RewriteEngine on
+     RewriteCond %{REQUEST_FILENAME} -s [OR]
+     RewriteCond %{REQUEST_FILENAME} -l [OR]
+     RewriteCond %{REQUEST_FILENAME} -d
+     RewriteRule ^.*$ - [NC,L]
+     RewriteRule ^(.*) /app/index.html [NC,L]
 </IfModule>
