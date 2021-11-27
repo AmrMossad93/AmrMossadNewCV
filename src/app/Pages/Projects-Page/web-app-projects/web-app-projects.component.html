@@ -10,11 +10,11 @@
         <img mat-card-image [src]="app.images[0]" [alt]="app.projectName">
         <mat-card-content>
           <p>
-           {{app.projectDetail}}
+            {{app.projectDetail}}
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-raised-button class="w-100" color="primary">
+          <button mat-raised-button class="w-100" color="primary" [routerLink]="'/projects/web-applications/' + app.id">
             See More About {{app.projectName}}
           </button>
         </mat-card-actions>

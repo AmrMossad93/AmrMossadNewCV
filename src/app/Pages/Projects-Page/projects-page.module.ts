@@ -6,12 +6,16 @@ import { WebAppProjectsComponent } from './web-app-projects/web-app-projects.com
 import { MobileAppProjectsComponent } from './mobile-app-projects/mobile-app-projects.component';
 import {WidgetsModule} from "../../Widgets/widgets.module";
 import {AngularMaterialModule} from "../../DesignModules/angular-material.module";
+import { WebAppProjectDetailComponent } from './web-app-projects/web-app-project-detail/web-app-project-detail.component';
+import { MobileAppProjectDetailComponent } from './mobile-app-projects/mobile-app-project-detail/mobile-app-project-detail.component';
 
 
 @NgModule({
   declarations: [
     WebAppProjectsComponent,
-    MobileAppProjectsComponent
+    MobileAppProjectsComponent,
+    WebAppProjectDetailComponent,
+    MobileAppProjectDetailComponent
   ],
     imports: [
         CommonModule,
