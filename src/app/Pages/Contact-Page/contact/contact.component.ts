@@ -26,8 +26,8 @@ export class ContactComponent implements OnInit {
       );
     }, () => {
       this.snackBarService.addAlert(
-        'Updated Successfully',
-        'Fiscal Year',
+        'Sent Successfully',
+        'Email',
         'end'
       );
       form.resetForm()
