@@ -9,14 +9,13 @@ import {trigger, transition, style, animate} from '@angular/animations';
   templateUrl: './web-app-projects.component.html',
   styleUrls: ['./web-app-projects.component.scss'],
   animations: [
-    trigger('slideInOut', [
-      transition(':enter', [
-        style({transform: 'translateX(100%)'}),
-        animate('.7s', style({transform: 'translateX(0%)'}))
+    trigger('fadeiIn', [
+      transition('void => *', [
+        style({opacity: 0}),
+        animate(1000, style({opacity: 1}))
       ]),
-      transition(':leave', [
-        style({transform: 'translateX(0%)'}),
-        animate('.7s', style({transform: 'translateX(100%)'}))
+      transition('* => void', [
+        animate(1000, style({opacity: 0}))
       ])
     ])
   ],
@@ -53,11 +52,9 @@ export class WebAppProjectsComponent implements OnInit {
 
   filterByCategory(category: string): void {
     if (category === 'All') {
-      console.log(this.webApplications);
       this.webApplicationsFiltered = this.webApplications;
     } else {
       this.webApplicationsFiltered = this.webApplications.filter(c => c.category === category);
-      console.log(this.webApplications.filter(c => c.category === category));
     }
   }
 }
