@@ -1,8 +1,16 @@
 <app-sub-nav-bar [subNavRoutes]="subNavRoutes"></app-sub-nav-bar>
-<app-card [subTitle]="'Here You Are My Web Applications'" [title]="'Web Applications'" [showProgress]="false">
+<app-card [subTitle]="'Here You Are My Web Applications'" [title]="'Web Applications'" [showProgress]="showProgress">
+  <div class="row mb-3">
+    <app-card [title]="'Categories'" [subTitle]="'Filter By The Category You Need'" [showProgress]="showProgress">
+      <div class="container text-center">
+        <button mat-flat-button *ngFor="let category of myCategory" class="m-3"
+                (click)="filterByCategory(category)" color="warn">{{category}}</button>
+      </div>
+    </app-card>
+  </div>
   <div class="row">
-    <div class="col-md-3 mb-3" *ngFor="let app of webApplications">
-      <mat-card class="w-100">
+    <div class="col-md-3 mb-3" *ngFor="let app of webApplicationsFiltered" >
+      <mat-card class="w-100 animate__animated animate__fadeIn" [@slideInOut]>
         <mat-card-header>
           <mat-card-title>{{app.projectName}}</mat-card-title>
           <mat-card-subtitle>{{app.client}} - ({{app.category}})</mat-card-subtitle>
