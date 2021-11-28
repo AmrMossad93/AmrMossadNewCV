@@ -93,6 +93,14 @@ mat-card-subtitle {
   border-radius: 3px;
 }
 
+.p-scrolltop.p-link {
+  background: rgba($primary-color, 0.7);
+}
+
+.p-scrolltop.p-link:hover {
+  background: rgba($primary-color, 0.8);
+}
+
 @keyframes gradient2 {
   0% {
     background-position: 0 50%;
