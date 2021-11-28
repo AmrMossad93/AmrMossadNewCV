@@ -1,1 +1,64 @@
-<p>mobile-app-project-detail works! {{projectId}}</p>
+<div class="container-fluid">
+  <app-card [title]="mobileApplication.projectName"
+            [subTitle]="mobileApplication.client + ' (' + mobileApplication.category + ')'"
+            [showProgress]="showProgress">
+    <div class="container">
+      <div class="card p-4">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide *ngFor="let image of mobileApplication.images; let i = index">
+            <p-image [src]="image" [alt]="mobileApplication.projectName" appendTo="body"
+                     [preview]="true">
+              <ng-template pTemplate="indicator">
+                <span class="text-center p-1">{{mobileApplication.projectName}} {{i + 1}} Image</span>
+              </ng-template>
+            </p-image>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <app-card [title]="mobileApplication.projectName + ' Brief'" [showProgress]="showProgress">
+            <h6 class="text-center">
+              {{mobileApplication.projectDetail}}
+            </h6>
+          </app-card>
+        </div>
+        <div class="col-md-12 mt-3">
+          <app-card [title]="'Core Development'" [showProgress]="showProgress">
+            <h6 class="text-center">
+              {{mobileApplication.coreDevelopment}}
+            </h6>
+          </app-card>
+        </div>
+        <div class="col-md-6 mt-3">
+          <app-card [title]="'Client'" [showProgress]="showProgress">
+            <h6 class="text-center">
+              {{mobileApplication.client}}
+            </h6>
+          </app-card>
+        </div>
+        <div class="col-md-6 mt-3">
+          <app-card [title]="'Category'" [showProgress]="showProgress">
+            <h6 class="text-center">
+              {{mobileApplication.category}}
+            </h6>
+          </app-card>
+        </div>
+        <div class="col-md-12 mt-3" *ngIf="mobileApplication.iosLink || mobileApplication.androidLink">
+          <a mat-raised-button class="float-end m-3" color="primary" [href]="mobileApplication.iosLink"
+             *ngIf="mobileApplication.iosLink" target="_blank">
+            Visit {{mobileApplication.projectName}} In App Store
+          </a>
+          <a mat-raised-button class="float-end m-3" color="primary" [href]="mobileApplication.androidLink"
+             *ngIf="mobileApplication.androidLink" target="_blank">
+            Visit {{mobileApplication.projectName}} In Google Play
+          </a>
+        </div>
+      </div>
+    </div>
+  </app-card>
+</div>
