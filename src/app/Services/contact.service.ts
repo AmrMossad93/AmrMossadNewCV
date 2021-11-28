@@ -11,7 +11,8 @@ export class ContactService {
 
   constructor(private httpClient: HttpClient) {
   }
+
   sendEmail(): Observable<any> {
-    return this.httpClient.post('https://formspree.io/f/xrgjzknp', {})
+    return this.httpClient.post('https://formspree.io/f/xrgjzknp', this.emailForm)
   }
 }
