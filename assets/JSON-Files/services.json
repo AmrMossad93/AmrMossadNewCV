@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "fab fa-css3",
+    "tittle": "Web Design",
+    "details": "Professional at Making Web Designs, Using Adobe XD"
+  },
+  {
+    "icon": "fas fa-laptop-code",
+    "tittle": "Web Development",
+    "details": "Professional At Developing Web Application As A Front-End Web Developer Using Latest Technologies, Such As Angular Or Many Frameworks"
+  },
+  {
+    "icon": "fas fa-mobile",
+    "tittle": "Mobile Development",
+    "details": "Professional At Developing Mobile Application As A Front-End Mobile Developer Using Latest Technologies, Such As Ionic Or Many Cross-Platform"
+  },
+  {
+    "icon": "fas fa-quidditch",
+    "tittle": "UI/UX Design",
+    "details": "Professional at Making UI/UX Designs Using Adobe XD"
+  },
+  {
+    "icon": "far fa-file-code",
+    "tittle": "UI/UX Development",
+    "details": "Professional At UI/UX Developing Converting Any PSD To Web Codded, Using HTML CSS Etc..."
+  },
+  {
+    "icon": "fas fa-sitemap",
+    "tittle": "ProtoType",
+    "details": "Professional at Making ProtoTypes Or Site Mapping, Using Adobe XD"
+  }
+]

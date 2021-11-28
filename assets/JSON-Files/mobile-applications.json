@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 3,
     "projectName": "El-Seif Health Care",
     "projectDetail": "It Was A Mobile Application That Can The User Book A Doctor Who Is In The Seif Community",
     "type": "Mobile-Applications",
@@ -38,13 +38,13 @@
     "videoUrl": null
   },
   {
-    "id": 3,
-    "projectName": "NGSC",
+    "id": 1,
+    "projectName": "New Giza Sports Club",
     "projectDetail": "It Was A Mobile Application That Can Manage Your New Giza Sports Club.",
     "type": "Mobile-Applications",
     "coreDevelopment": "Ionic , Capacitor , IOS , Android",
     "client": "New Giza - Vodaphone - Seen Solutions",
-    "category": "Management",
+    "category": "Sports",
     "iosLink": "https://apps.apple.com/eg/app/ngsc/id1548540039",
     "androidLink": "https://play.google.com/store/apps/details?id=com.ngsc.app",
     "images": [
