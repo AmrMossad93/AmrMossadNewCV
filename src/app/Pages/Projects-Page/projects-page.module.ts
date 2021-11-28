@@ -8,6 +8,8 @@ import {WidgetsModule} from "../../Widgets/widgets.module";
 import {AngularMaterialModule} from "../../DesignModules/angular-material.module";
 import { WebAppProjectDetailComponent } from './web-app-projects/web-app-project-detail/web-app-project-detail.component';
 import { MobileAppProjectDetailComponent } from './mobile-app-projects/mobile-app-project-detail/mobile-app-project-detail.component';
+import {PrimeNgModule} from "../../DesignModules/prime-ng.module";
+import {CarouselModule} from "ngx-owl-carousel-o";
 
 
 @NgModule({
@@ -17,11 +19,13 @@ import { MobileAppProjectDetailComponent } from './mobile-app-projects/mobile-ap
     WebAppProjectDetailComponent,
     MobileAppProjectDetailComponent
   ],
-    imports: [
-        CommonModule,
-        ProjectsPageRoutingModule,
-        WidgetsModule,
-        AngularMaterialModule
-    ]
+  imports: [
+    CommonModule,
+    ProjectsPageRoutingModule,
+    WidgetsModule,
+    AngularMaterialModule,
+    PrimeNgModule,
+    CarouselModule
+  ]
 })
 export class ProjectsPageModule { }

@@ -1,1 +1,58 @@
-<p>web-app-project-detail works! {{projectId}}</p>
+<div class="container-fluid">
+  <app-card [title]="webApplication.projectName"
+            [subTitle]="webApplication.client + ' (' + webApplication.category + ')'" [showProgress]="showProgress">
+    <div class="container">
+      <div class="card p-4">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide *ngFor="let image of webApplication.images; let i = index">
+            <p-image [src]="image" [alt]="webApplication.projectName" appendTo="body"
+                     [preview]="true">
+              <ng-template pTemplate="indicator">
+                <span class="text-center p-1">{{webApplication.projectName}} {{i + 1}} Image</span>
+              </ng-template>
+            </p-image>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <app-card [title]="webApplication.projectName + ' Brief'" [showProgress]="showProgress">
+            <h6 class="text-center">
+              {{webApplication.projectDetail}}
+            </h6>
+          </app-card>
+        </div>
+        <div class="col-md-12 mt-3">
+          <app-card [title]="'Core Development'" [showProgress]="showProgress">
+            <h6 class="text-center">
+              {{webApplication.coreDevelopment}}
+            </h6>
+          </app-card>
+        </div>
+        <div class="col-md-6 mt-3">
+          <app-card [title]="'Client'" [showProgress]="showProgress">
+            <h6 class="text-center">
+              {{webApplication.client}}
+            </h6>
+          </app-card>
+        </div>
+        <div class="col-md-6 mt-3">
+          <app-card [title]="'Category'" [showProgress]="showProgress">
+            <h6 class="text-center">
+              {{webApplication.category}}
+            </h6>
+          </app-card>
+        </div>
+        <div class="col-md-12 mt-3" *ngIf="webApplication.webSiteURL">
+          <a mat-raised-button class="float-end" color="primary" [href]="webApplication.webSiteURL" target="_blank">
+            Visit {{webApplication.projectName}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </app-card>
+</div>

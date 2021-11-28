@@ -15,6 +15,7 @@ import {SpeedDialModule} from 'primeng/speeddial';
 import {TimelineModule} from 'primeng/timeline';
 import {CardModule} from "primeng/card";
 import {ImageModule} from 'primeng/image';
+import {GalleriaModule} from 'primeng/galleria';
 
 const primeNgModule = [
   ButtonModule,
@@ -31,7 +32,8 @@ const primeNgModule = [
   SpeedDialModule,
   TimelineModule,
   CardModule,
-  ImageModule
+  ImageModule,
+  GalleriaModule
 ];
 
 @NgModule({

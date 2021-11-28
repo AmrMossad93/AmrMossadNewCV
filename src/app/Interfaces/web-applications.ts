@@ -8,4 +8,5 @@ export interface IWebApplications {
   type: string;
   images: string[];
   videoUrl: string;
+  webSiteURL: string;
 }

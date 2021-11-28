@@ -82,6 +82,17 @@ mat-card-subtitle {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: $primary-color;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
 @keyframes gradient2 {
   0% {
     background-position: 0 50%;
