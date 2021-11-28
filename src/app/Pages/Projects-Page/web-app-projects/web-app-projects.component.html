@@ -9,8 +9,8 @@
     </app-card>
   </div>
   <div class="row">
-    <div class="col-md-3 mb-3" *ngFor="let app of webApplicationsFiltered" >
-      <mat-card class="w-100 animate__animated animate__fadeIn" [@fadeiIn]>
+    <div class="col-md-3 mb-3" *ngFor="let app of webApplicationsFiltered">
+      <mat-card class="w-100" [@fadeIn]>
         <mat-card-header>
           <mat-card-title>{{app.projectName}}</mat-card-title>
           <mat-card-subtitle>{{app.client}} - ({{app.category}})</mat-card-subtitle>

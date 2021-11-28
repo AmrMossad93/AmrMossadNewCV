@@ -9,7 +9,7 @@ import {trigger, transition, style, animate} from '@angular/animations';
   templateUrl: './web-app-projects.component.html',
   styleUrls: ['./web-app-projects.component.scss'],
   animations: [
-    trigger('fadeiIn', [
+    trigger('fadeIn', [
       transition('void => *', [
         style({opacity: 0}),
         animate(1000, style({opacity: 1}))
