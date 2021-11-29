@@ -1,5 +1,6 @@
 <app-sub-nav-bar [subNavRoutes]="subNavRoutes"></app-sub-nav-bar>
-<app-card [subTitle]="'Here You Are My Web Applications'" [title]="'Web Applications'" [showProgress]="showProgress">
+<app-card [subTitle]="'Here You Are My Web Applications'" [title]="webApplications.length + 'Web Application'"
+          [showProgress]="showProgress">
   <div class="row mb-3">
     <app-card [title]="'Categories'" [subTitle]="'Filter By The Category You Need'" [showProgress]="showProgress">
       <div class="container text-center">
