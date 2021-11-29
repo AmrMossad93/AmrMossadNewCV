@@ -4,7 +4,7 @@
     "projectName": "iSmileOn",
     "projectDetail": "It Is The Medical App For Doctors Or Scanning Centers To View The Medical Aligners Order And Refinements For The Teeth Where The Doctor Can Order And Aligner And Receive It In The Place He Want.",
     "type": "Web-Applications",
-    "coreDevelopment": "HTML5 , CSS3 , Angular 11 , PrimNg , Bootstrap 5, TypeScript , Fontawesome , Material Icons",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 11 , PrimNg , Bootstrap 5, TypeScript , Fontawesome , Material Icons, Three.js",
     "client": "3D-Diagnostics",
     "category": "Medical",
     "webSiteURL": "https://www.3ddx.com/ismile",
