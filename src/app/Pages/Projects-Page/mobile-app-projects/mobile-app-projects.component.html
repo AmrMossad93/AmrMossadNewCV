@@ -15,7 +15,11 @@
           <mat-card-title>{{app.projectName}}</mat-card-title>
           <mat-card-subtitle>{{app.client}} - ({{app.category}})</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image [src]="app.images[0]" [alt]="app.projectName">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide *ngFor="let image of app.images; let i = index">
+            <img mat-card-image [src]="image" [alt]="app.projectName">
+          </ng-template>
+        </owl-carousel-o>
         <mat-card-content>
           <p>
             {{app.projectDetail}}

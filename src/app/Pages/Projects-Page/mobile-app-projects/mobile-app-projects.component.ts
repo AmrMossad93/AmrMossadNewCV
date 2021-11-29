@@ -3,6 +3,7 @@ import {ISubNav} from "../../../Interfaces/sub-nav";
 import {ProjectsService} from "../../../Services/projects.service";
 import {IMobileApplications} from "../../../Interfaces/mobile-applications";
 import {animate, style, transition, trigger} from "@angular/animations";
+import {OwlOptions} from "ngx-owl-carousel-o";
 
 @Component({
   selector: 'app-mobile-app-projects',
@@ -27,7 +28,32 @@ export class MobileAppProjectsComponent implements OnInit {
   mobileApplicationsFiltered: IMobileApplications[] = []
   myCategory: string[] = [];
   showProgress: boolean = true;
-
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    autoplay: true,
+    dots: false,
+    autoWidth: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      },
+      740: {
+        items: 1
+      },
+      940: {
+        items: 1
+      }
+    },
+    nav: true
+  }
   constructor(private projectsService: ProjectsService) {
   }
 
