@@ -38,6 +38,13 @@ const routes: Routes = [
       )
   },
   {
+    path: 'contact',
+    loadChildren: () =>
+      import('./Pages/Contact-Page/contact.module').then(
+        m => m.ContactModule
+      )
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'

@@ -1,0 +1,33 @@
+<app-card [subTitle]="'Looking Forward To Hearing From You'" [title]="'Contact Me'" [showProgress]="false">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <app-card [title]="'Send Me An Email'" [showProgress]="false">
+          <form autocomplete="off" (submit)="onSubmit()">
+            <div class="row">
+              <div class="col-md-12">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Email Address</mat-label>
+                  <mat-icon matSuffix>alternate_email</mat-icon>
+                  <input [(ngModel)]="contactService.emailForm.email" name="email" required matInput ngvemail>
+                </mat-form-field>
+              </div>
+              <div class="col-md-12">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Message</mat-label>
+                  <mat-icon matSuffix>sms</mat-icon>
+                  <textarea [(ngModel)]="contactService.emailForm.message" name="message" required matInput></textarea>
+                </mat-form-field>
+              </div>
+              <div class="col-md-12">
+                <button mat-raised-button class="w-100" type="submit">
+                  Send Me
+                </button>
+              </div>
+            </div>
+          </form>
+        </app-card>
+      </div>
+    </div>
+  </div>
+</app-card>
