@@ -1,5 +1,25 @@
 [
   {
+    "id": 28,
+    "projectName": "Connect V1",
+    "projectDetail": "It Is The Web Portal for 3D Conversions, Radiology Reports, Treatment Plans and Surgical Guides  For The Orders Where The Doctor Can Order And Aligner And Receive It In The Place He Want.",
+    "type": "Web-Applications",
+    "coreDevelopment": "HTML5 , CSS3 , Angular 7 , Bootstrap 4, TypeScript , Fontawesome",
+    "client": "3D-Diagnostics",
+    "category": "Medical",
+    "webSiteURL": "https://3ddiagnostix.com/newconnect-ui/",
+    "images": [
+      "assets/Images/Projects/Connect/Connect-1.PNG",
+      "assets/Images/Projects/Connect/Connect-2.PNG",
+      "assets/Images/Projects/Connect/Connect-3.PNG",
+      "assets/Images/Projects/Connect/Connect-4.PNG",
+      "assets/Images/Projects/Connect/Connect-5.PNG",
+      "assets/Images/Projects/Connect/Connect-6.PNG",
+      "assets/Images/Projects/Connect/Connect-7.PNG"
+    ],
+    "videoUrl": null
+  },
+  {
     "id": 27,
     "projectName": "iSmileOn",
     "projectDetail": "It Is The Medical App For Doctors Or Scanning Centers To View The Medical Aligners Order And Refinements For The Teeth Where The Doctor Can Order And Aligner And Receive It In The Place He Want.",
