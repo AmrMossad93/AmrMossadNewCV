@@ -15,8 +15,7 @@ export class AppComponent implements OnInit {
     {url: 'about-me', page: 'About Me'},
     {url: 'resume', page: 'Resume'},
     {url: 'projects/web-applications', page: 'Projects'},
-    {url: 'services', page: 'Services'},
-    {url: 'contact', page: 'Contact'},
+    {url: 'services', page: 'Services'}
   ];
   currentUrl: string = '';
   lang = localStorage.getItem('amrMossadWebsiteLanguage');
