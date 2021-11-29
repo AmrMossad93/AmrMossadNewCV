@@ -1,1 +1,19 @@
-<p>services-page works!</p>
+<app-card [title]="'What Can I Do For You?'" [subTitle]="'My Services'" [showProgress]="showProgress">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3" *ngFor="let service of servicesList">
+        <mat-card>
+          <mat-card-header>
+            <i mat-card-avatar [class]="service.icon"></i>
+            <mat-card-title>{{service.tittle}}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <h5>
+              {{service.details}}
+            </h5>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</app-card>

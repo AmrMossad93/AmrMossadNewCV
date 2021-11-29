@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { ServicesPageRoutingModule } from './services-page-routing.module';
 import { ServicesPageComponent } from './services-page/services-page.component';
+import {AngularMaterialModule} from "../../DesignModules/angular-material.module";
+import {WidgetsModule} from "../../Widgets/widgets.module";
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { ServicesPageComponent } from './services-page/services-page.component';
   ],
   imports: [
     CommonModule,
-    ServicesPageRoutingModule
+    ServicesPageRoutingModule,
+    AngularMaterialModule,
+    WidgetsModule
   ]
 })
 export class ServicesPageModule { }
