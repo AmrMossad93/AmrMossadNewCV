@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     {url: 'home', page: 'Home Page'},
     {url: 'about-me', page: 'About Me'},
     {url: 'resume', page: 'Resume'},
-    {url: 'projects/web-applications', page: 'Projects'},
+    {url: 'projects', page: 'Projects'},
     {url: 'services', page: 'Services'},
     {url: 'contact', page: 'Contact'},
   ];

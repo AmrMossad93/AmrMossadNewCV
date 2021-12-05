@@ -9,7 +9,12 @@ const routes: Routes = [
   {path: 'web-applications', component: WebAppProjectsComponent},
   {path: 'web-applications/:projectId', component: WebAppProjectDetailComponent},
   {path: 'mobile-applications', component: MobileAppProjectsComponent},
-  {path: 'mobile-applications/:projectId', component: MobileAppProjectDetailComponent}
+  {path: 'mobile-applications/:projectId', component: MobileAppProjectDetailComponent},
+  {
+    path: "",
+    pathMatch: 'full',
+    redirectTo: "web-applications"
+  },
 ];
 
 @NgModule({
