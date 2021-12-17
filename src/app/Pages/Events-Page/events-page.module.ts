@@ -6,6 +6,8 @@ import { EventsComponent } from './events/events.component';
 import {WidgetsModule} from "../../Widgets/widgets.module";
 import {AngularMaterialModule} from "../../DesignModules/angular-material.module";
 import { EventDetailsComponent } from './events/event-details/event-details.component';
+import {CarouselModule} from "ngx-owl-carousel-o";
+import {PrimeNgModule} from "../../DesignModules/prime-ng.module";
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { EventDetailsComponent } from './events/event-details/event-details.comp
     CommonModule,
     EventsPageRoutingModule,
     WidgetsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    CarouselModule,
+    PrimeNgModule
   ]
 })
 export class EventsPageModule { }
