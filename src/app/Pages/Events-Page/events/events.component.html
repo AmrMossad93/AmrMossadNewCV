@@ -1,1 +1,23 @@
-<p>events works!</p>
+<app-card [subTitle]="'Here You Are My Slogans'" [title]="eventList.length + 'Events'" [showProgress]="showProgress">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let event of eventList">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{event.eventTitle}}</mat-card-title>
+          <mat-card-subtitle>{{event.eventDate}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="event.eventImages[0]" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <h3 class="text-center text-primary">
+            {{event.sloganTitle}}
+          </h3>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button class="w-100" color="primary" [routerLink]="'/events/' + event.id">
+            See More
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</app-card>

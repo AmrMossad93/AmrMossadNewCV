@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "eventPlanerTeam": "LinkCu",
+    "eventDate": "3 Dec. 2021",
+    "eventTitle": "LinkCu Welcome Party",
+    "sloganTitle": "From Zero To Hero",
+    "eventDetails": "Slogan Was About How To Improve Your Fail To Be A Successful Team Player",
+    "eventImages": [
+      "assets/Images/Events/Link/01.jpeg",
+      "assets/Images/Events/Link/02.jpeg",
+      "assets/Images/Events/Link/03.jpeg",
+      "assets/Images/Events/Link/04.jpeg",
+      "assets/Images/Events/Link/05.jpeg",
+      "assets/Images/Events/Link/06.jpeg",
+      "assets/Images/Events/Link/07.jpeg",
+      "assets/Images/Events/Link/08.jpeg",
+      "assets/Images/Events/Link/09.jpeg"
+    ]
+  }
+]
