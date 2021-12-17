@@ -38,6 +38,13 @@ const routes: Routes = [
       )
   },
   {
+    path: 'events',
+    loadChildren: () =>
+      import('./Pages/Events-Page/events-page.module').then(
+        m => m.EventsPageModule
+      )
+  },
+  {
     path: 'contact',
     loadChildren: () =>
       import('./Pages/Contact-Page/contact.module').then(

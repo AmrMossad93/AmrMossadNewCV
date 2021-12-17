@@ -11,12 +11,13 @@ import {LoaderService} from "./Services/loader.service";
 })
 export class AppComponent implements OnInit {
   connectUrls = [
-    {url: 'home', page: 'Home Page'},
-    {url: 'about-me', page: 'About Me'},
-    {url: 'resume', page: 'Resume'},
-    {url: 'projects', page: 'Projects'},
-    {url: 'services', page: 'Services'},
-    {url: 'contact', page: 'Contact'},
+    {url: 'home', page: 'Home', icon: 'home'},
+    {url: 'about-me', page: 'About Me', icon: 'account_circle'},
+    {url: 'resume', page: 'Resume', icon: 'menu_book'},
+    {url: 'projects', page: 'Projects', icon: 'integration_instructions'},
+    {url: 'services', page: 'Services', icon: 'support_agent'},
+    {url: 'events', page: 'Events', icon: 'event'},
+    {url: 'contact', page: 'Contact', icon: 'contact_mail'},
   ];
   currentUrl: string = '';
   lang = localStorage.getItem('amrMossadWebsiteLanguage');
