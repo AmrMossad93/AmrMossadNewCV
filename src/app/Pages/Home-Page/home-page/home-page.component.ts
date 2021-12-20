@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {HomeService} from "../../../Services/home.service";
 
 @Component({
   selector: 'app-home-page',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
+  welcomeMessage: string = '';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private homeService: HomeService) {
   }
 
+  ngOnInit(): void {
+    this.getHomeDetails();
+  }
+
+  getHomeDetails(): void {
+    this.homeService.getHomeDetails().subscribe(res => {
+      this.welcomeMessage = res.welcomeMessage
+    })
+  }
 }
